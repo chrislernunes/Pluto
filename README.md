@@ -1,6 +1,6 @@
 # Pluto – Backtesting Engine 🚀
 
-Pluto_test is a **Python-based quantitative backtesting engine** built for systematic traders and researchers.  
+Pluto is a **Python-based quantitative backtesting engine** built for systematic traders and researchers.  
 It focuses on **clean architecture, reproducibility, and fast experimentation** for intraday and swing trading strategies.
 
 This repository is an active research sandbox for building, testing, and optimizing rule-based trading systems.
