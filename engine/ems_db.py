@@ -1,4 +1,5 @@
 import datetime
+import os
 from typing import Optional, Dict, List, Tuple, Union
 
 import duckdb
@@ -8,6 +9,7 @@ import pandas as pd
 # from cython_modules.payoff import single_strike_payoff_cal
 from utils.logging_config import BacktestLogger
 from utils.utility import holidays, stock_tickers
+from engine.csv_data_store import CSVDataStore
 
 DB_PATH = "/mnt/disk2/bt.db"
 
@@ -69,8 +71,15 @@ class DataInterface:
         self.logger = BacktestLogger.get_logger(
             "DataInterface", "backtest/logs/data_interface.log"
         )
+        self.csv_store = None
+        csv_path = os.getenv("PLUTO_CSV_PATH")
+        if csv_path:
+            self.csv_store = CSVDataStore(csv_path)
         self.dict_of_expiries = {}
         for i in indexes:
+            if self.csv_store:
+                self.dict_of_expiries[i] = self.csv_store.get_expiry_dates(i)
+                continue
             exchange = self.get_exchange(i)
             try:
                 tables_query = f"""
@@ -101,6 +110,8 @@ class DataInterface:
         return "NSE"
 
     def _get_conn(self):
+        if self.csv_store:
+            return None
         if self._conn is None:
             try:
                 self._conn = duckdb.connect(DB_PATH, read_only=True, config={"memory_limit": "1GB"})
@@ -111,6 +122,8 @@ class DataInterface:
 
     @property
     def conn(self):
+        if self.csv_store:
+            return None
         if self._conn is None:
             return self._get_conn()
         try:
@@ -131,6 +144,8 @@ class DataInterface:
         return strike_diff_dict.get(underlying)
 
     def get_expiry_dates(self, underlying):
+        if self.csv_store:
+            return self.csv_store.get_expiry_dates(underlying)
         try:
             list_of_expiries = self.dict_of_expiries[underlying]
             return sorted(list_of_expiries)
@@ -140,22 +155,25 @@ class DataInterface:
 
     def get_expiry_code(self, timestamp, underlying, expiry_idx):
         expiries = self.get_expiry_dates(underlying)
-        future_expiries = [d for d in expiries if d >= pd.Timestamp(timestamp.date())]
+        future_expiries = [d for d in expiries if pd.Timestamp(d) >= pd.Timestamp(timestamp.date())]
 
         if not future_expiries:
             raise ValueError("No upcoming expiries found")
 
         expiry_date = future_expiries[expiry_idx]
+        expiry_date = pd.Timestamp(expiry_date)
         return expiry_date.strftime('%y%m%d')
 
     def get_monthly_expiry_code(self, timestamp, underlying):
         expiries = self.get_expiry_dates(underlying)
-        monthly_expiries = [d for d in expiries if d.month == timestamp.month and d.year == timestamp.year]
+        monthly_expiries = [
+            d for d in expiries if pd.Timestamp(d).month == timestamp.month and pd.Timestamp(d).year == timestamp.year
+        ]
 
         if not monthly_expiries:
             raise ValueError("No monthly expiries found")
 
-        expiry_date = sorted(monthly_expiries)[-1]
+        expiry_date = pd.Timestamp(sorted(monthly_expiries)[-1])
         return expiry_date.strftime('%y%m%d')
 
     def parse_date_from_symbol(self, symbol):
@@ -188,7 +206,6 @@ class DataInterface:
     def find_symbol_by_moneyness(self, timestamp, underlying, expiry_idx, opt_type, otm_count):
         strike_diff = self.get_strike_diff(underlying)
         shifter = 1 if opt_type == 'CE' else -1
-        exchange = self.get_exchange(underlying)
 
         spot = self.get_tick(timestamp, f"{underlying}SPOT")
         spot_price = spot['c'] if spot is not None else 0
@@ -199,6 +216,14 @@ class DataInterface:
         expiry_code = self.get_expiry_code(timestamp, underlying, expiry_idx)
         symbol = f"{underlying}{expiry_code}{selected_strike}{opt_type}"
 
+        if self.csv_store:
+            tick = self.csv_store.get_tick(timestamp, symbol)
+            if tick is not None:
+                return symbol
+            print("Moneyness Symbol Not found in CSV")
+            return None
+
+        exchange = self.get_exchange(underlying)
         opt_type_db = 'call' if 'CE' in symbol else 'put'
         expiry = self.parse_date_from_symbol(symbol).strftime('%Y%m%d')
         strike = self.parse_strike_from_symbol(symbol)
@@ -235,8 +260,6 @@ class DataInterface:
             else:
                 raise ValueError("Invalid expiry code format")
 
-            exchange = self.get_exchange(underlying)
-
             spot_tick = self.get_tick(timestamp, f"{underlying}SPOT")
             if spot_tick is None or spot_tick['c'] is np.nan:
                 return None
@@ -246,12 +269,18 @@ class DataInterface:
             atm_strike = round(spot_price / strike_diff) * strike_diff
             shifter = 1 if opt_type == 'CE' else -1
 
-            table = f"{exchange}_Options_Expiry_{underlying}_{expiry_date.strftime('%Y%m%d')}"
-            df = self.conn.execute(f"""
-                SELECT * FROM {table}
-                WHERE option_type = '{'call' if opt_type == 'CE' else 'put'}'
-                AND ts = '{timestamp.strftime('%Y-%m-%d %H:%M:%S')}'
-            """).fetchdf()
+            if self.csv_store:
+                df = self.csv_store.get_option_chain_snapshot(
+                    timestamp, underlying, expiry_date.date(), opt_type
+                )
+            else:
+                exchange = self.get_exchange(underlying)
+                table = f"{exchange}_Options_Expiry_{underlying}_{expiry_date.strftime('%Y%m%d')}"
+                df = self.conn.execute(f"""
+                    SELECT * FROM {table}
+                    WHERE option_type = '{'call' if opt_type == 'CE' else 'put'}'
+                    AND ts = '{timestamp.strftime('%Y-%m-%d %H:%M:%S')}'
+                """).fetchdf()
 
             if df.empty:
                 return None
@@ -278,7 +307,7 @@ class DataInterface:
                     return None
 
                 prem = tick['c']
-                oi = tick['oi']
+                oi = tick.get('oi', 0)
 
                 moneyness = shifter * (strike - atm_strike) / strike_diff
 
@@ -294,7 +323,7 @@ class DataInterface:
                     temp_symbol = f"{underlying}{expiry_code}{strike + strike_diff * shifter}{opt_type}"
                     tick = self.get_tick(timestamp, temp_symbol)
                     if tick is not None and tick['c'] <= seek_price * (1 + premium_rms_thresh) and \
-                       tick['oi'] >= oi_thresh * self.get_lot_size(underlying):
+                       tick.get('oi', 0) >= oi_thresh * self.get_lot_size(underlying):
                         symbol = temp_symbol
                     else:
                         symbol = None
@@ -306,6 +335,8 @@ class DataInterface:
             return None
 
     def get_tick(self, timestamp, symbol):
+        if self.csv_store:
+            return self.csv_store.get_tick(timestamp, symbol)
         if isinstance(timestamp, datetime.datetime):
             timestamp_str = timestamp.strftime('%Y-%m-%d %H:%M:%S')
         else:
@@ -372,18 +403,20 @@ class DataInterface:
         try:
             exchange = self.get_exchange(underlying)
             expiries = self.get_expiry_dates(underlying)
-            future_expiries = [d for d in expiries if d.date() >= timestamp.date()]
+            future_expiries = [d for d in expiries if pd.Timestamp(d).date() >= timestamp.date()]
 
             if not future_expiries:
                 return None
 
-            return sorted(future_expiries)[0].date()
+            return pd.Timestamp(sorted(future_expiries)[0]).date()
 
         except Exception as e:
             print(f"Error fetching nearest expiry: {e}")
             return None
 
     def get_last_available_tick(self, symbol):
+        if self.csv_store:
+            return self.csv_store.get_last_available_tick(symbol)
         try:
             instrument = 'Index' if not any(char.isdigit() for char in symbol) else 'Options'
             underlying = next((u for u in indexes if symbol.startswith(u)), None)
@@ -414,6 +447,8 @@ class DataInterface:
             return None
 
     def get_all_ticks_by_symbol(self, symbol):
+        if self.csv_store:
+            return self.csv_store.get_all_ticks_by_symbol(symbol)
         try:
             instrument = 'Index' if not any(char.isdigit() for char in symbol) else 'Options'
             underlying = next((u for u in indexes if symbol.startswith(u)), None)
@@ -442,6 +477,8 @@ class DataInterface:
             return pd.DataFrame()
 
     def get_ticks_of_symbol_between_timestamps(self, symbol, from_timestamp=None, to_timestamp=None):
+        if self.csv_store:
+            return self.csv_store.get_ticks_between(symbol, from_timestamp, to_timestamp)
         df = self.get_all_ticks_by_symbol(symbol)
         if from_timestamp:
             df = df[df['ts'] >= pd.to_datetime(from_timestamp)]
@@ -507,6 +544,11 @@ class DataInterface:
         return symbol.replace(str(strike), str(new_strike))
 
     def get_delta_by_symbol(self,timestamp,symbol):
+        if self.csv_store:
+            tick = self.csv_store.get_tick(timestamp, symbol)
+            if tick is None or "delta" not in tick:
+                return None
+            return float(tick["delta"])
         underlying =  get_underlying(symbol)
         exchange = self.get_exchange(underlying)
         expiry = self.parse_date_from_symbol(symbol).strftime('%Y%m%d')
@@ -534,19 +576,23 @@ class DataInterface:
             else:
                 raise ValueError("Invalid expiry code format")
 
-            exchange = self.get_exchange(underlying)
-
-            table = f"{exchange}_Options_Expiry_{underlying}_{expiry_date.strftime('%Y%m%d')}"
-            subset_data = self.conn.execute(f"""
-                    SELECT * FROM {table}
-                    WHERE option_type = '{'call' if opt_type == 'CE' else 'put'}'
-                    AND ts = '{timestamp.strftime('%Y-%m-%d %H:%M:%S')}'
-                """).fetchdf()
+            if self.csv_store:
+                subset_data = self.csv_store.get_option_chain_snapshot(
+                    timestamp, underlying, expiry_date.date(), opt_type
+                )
+            else:
+                exchange = self.get_exchange(underlying)
+                table = f"{exchange}_Options_Expiry_{underlying}_{expiry_date.strftime('%Y%m%d')}"
+                subset_data = self.conn.execute(f"""
+                        SELECT * FROM {table}
+                        WHERE option_type = '{'call' if opt_type == 'CE' else 'put'}'
+                        AND ts = '{timestamp.strftime('%Y-%m-%d %H:%M:%S')}'
+                    """).fetchdf()
 
             if volume_filter is not None:
                 subset_data = subset_data[subset_data['v']>volume_filter]
 
-            if subset_data.empty:
+            if subset_data.empty or "delta" not in subset_data.columns:
                 return None,None
 
             if seek_type == None:
@@ -599,14 +645,18 @@ class DataInterface:
             else:
                 raise ValueError("Invalid expiry code format")
 
-            exchange = self.get_exchange(underlying)
-
-            table = f"{exchange}_Options_Expiry_{underlying}_{expiry_date.strftime('%Y%m%d')}"
-            subset_data = self.conn.execute(f"""
-            SELECT * FROM {table}
-            WHERE option_type = '{'call' if opt_type == 'CE' else 'put'}'
-            AND ts = '{timestamp.strftime('%Y-%m-%d %H:%M:%S')}'
-                                                                        """).fetchdf()
+            if self.csv_store:
+                subset_data = self.csv_store.get_option_chain_snapshot(
+                    timestamp, underlying, expiry_date.date(), opt_type
+                )
+            else:
+                exchange = self.get_exchange(underlying)
+                table = f"{exchange}_Options_Expiry_{underlying}_{expiry_date.strftime('%Y%m%d')}"
+                subset_data = self.conn.execute(f"""
+                SELECT * FROM {table}
+                WHERE option_type = '{'call' if opt_type == 'CE' else 'put'}'
+                AND ts = '{timestamp.strftime('%Y-%m-%d %H:%M:%S')}'
+                                                                            """).fetchdf()
         
             if volume_filter is not None:
                 subset_data = subset_data[subset_data['v'] > volume_filter]
@@ -642,7 +692,7 @@ class DataInterface:
             selected_row = eligible_data.loc[eligible_data['itm_percent'].idxmax()]
             strike = int(selected_row['strike'])
             actual_itm_percent = float(selected_row['itm_percent'])
-            delta = float(selected_row['delta'])
+            delta = float(selected_row['delta']) if 'delta' in selected_row else None
 
             symbol = f"{underlying}{expiry_code}{strike}{opt_type}"
 
@@ -670,14 +720,18 @@ class DataInterface:
             else:
                 raise ValueError("Invalid expiry code format")
 
-            exchange = self.get_exchange(underlying)
-
-            table = f"{exchange}_Options_Expiry_{underlying}_{expiry_date.strftime('%Y%m%d')}"
-            subset_data = self.conn.execute(f"""
-            SELECT * FROM {table}
-            WHERE option_type = '{'call' if opt_type == 'CE' else 'put'}'
-            AND ts = '{timestamp.strftime('%Y-%m-%d %H:%M:%S')}'
-                                                                        """).fetchdf()
+            if self.csv_store:
+                subset_data = self.csv_store.get_option_chain_snapshot(
+                    timestamp, underlying, expiry_date.date(), opt_type
+                )
+            else:
+                exchange = self.get_exchange(underlying)
+                table = f"{exchange}_Options_Expiry_{underlying}_{expiry_date.strftime('%Y%m%d')}"
+                subset_data = self.conn.execute(f"""
+                SELECT * FROM {table}
+                WHERE option_type = '{'call' if opt_type == 'CE' else 'put'}'
+                AND ts = '{timestamp.strftime('%Y-%m-%d %H:%M:%S')}'
+                                                                            """).fetchdf()
 
             if volume_filter is not None:
                 subset_data = subset_data[subset_data['v'] > volume_filter]
@@ -695,7 +749,7 @@ class DataInterface:
 
             strike = int(selected_row['strike'])
             actual_moneyness_percent = float(selected_row['moneyness_percent']) if 'moneyness_percent' in selected_row else None
-            delta = float(selected_row['delta'])
+            delta = float(selected_row['delta']) if 'delta' in selected_row else None
 
             symbol = f"{underlying}{expiry_code}{strike}{opt_type}"
 
@@ -708,7 +762,6 @@ class DataInterface:
     def find_symbol_by_moneyness_attempt(self, timestamp, underlying, expiry_idx, opt_type, otm_count, max_attempts=100):
         strike_diff = self.get_strike_diff(underlying)
         shifter = 1 if opt_type == 'CE' else -1
-        exchange = self.get_exchange(underlying)
         
         spot = self.get_tick(timestamp, f"{underlying}")
         spot_price = spot['c'] if spot is not None else 0
@@ -724,6 +777,13 @@ class DataInterface:
             selected_strike = int(atm_strike + adjusted_otm_count * shifter * strike_diff)
             symbol = f"{underlying}{expiry_code}{selected_strike}{opt_type}"
 
+            if self.csv_store:
+                tick = self.get_tick(timestamp, symbol)
+                if tick is not None:
+                    return symbol
+                continue
+
+            exchange = self.get_exchange(underlying)
             # Determine option type
             opt_type_str = 'call' if 'CE' in symbol else 'put'
             expiry = self.parse_date_from_symbol(symbol).strftime('%Y%m%d')

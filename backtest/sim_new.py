@@ -1,4 +1,5 @@
 import datetime
+import os
 import multiprocessing
 import traceback
 from itertools import repeat
@@ -56,7 +57,7 @@ def _load_market_data() -> pd.DataFrame:
     try:
         data_interface = ei()
         
-        UNDERLYING = EXCHANGE_MAPPING[SELECTED_EXCHANGE][0]
+        UNDERLYING = os.getenv("PLUTO_UNDERLYING", EXCHANGE_MAPPING[SELECTED_EXCHANGE][0])
         TRADING_START_TIME = EXCHANGE_CONFIG[SELECTED_EXCHANGE]['trading_start']
         TRADING_END_TIME = EXCHANGE_CONFIG[SELECTED_EXCHANGE]['trading_end']
         EXCLUDED_DATES = EXCHANGE_CONFIG[SELECTED_EXCHANGE]['excluded_dates']

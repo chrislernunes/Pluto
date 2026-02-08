@@ -72,6 +72,37 @@ python setup.py build_ext --inplace
 
 ## 🚀 Running a Backtest
 
+### CSV Data Mode (single file)
+
+If you want to run Pluto on a personal PC using a **single CSV file**, set the environment
+variable `PLUTO_CSV_PATH` to point at your data file. When this is set, Pluto reads all
+market data from that CSV instead of DuckDB.
+
+**Required columns**
+- `ts` (or `timestamp`) – timestamp for each row
+- `symbol` – instrument symbol (e.g., `NIFTY`, `NIFTYSPOT`, `NIFTY24062719500CE`)
+- `c` – close/last traded price
+
+**Optional columns (recommended for options strategies)**
+- `o`, `h`, `l`, `v`, `oi` – OHLC, volume, open interest
+- `delta`, `moneyness_percent` – required for delta/ITM-based selection helpers
+- If you need to compute greeks locally, use `utils/greeks.py` to generate `delta`,
+   `gamma`, `vega`, `theta`, and `rho` from spot/strike/IV inputs.
+
+**Notes**
+- If your CSV only has `NIFTY` (no `NIFTYSPOT`), Pluto will automatically use `NIFTY`
+  prices for spot lookups.
+- Options symbols are parsed from the standard format: `UNDERLYING + YYMMDD + STRIKE + CE/PE`.
+- Use `PLUTO_UNDERLYING` to override which underlying is used for the simulation loop.
+
+Example (Linux/macOS):
+
+```bash
+export PLUTO_CSV_PATH=/path/to/market_data.csv
+export PLUTO_UNDERLYING=NIFTY
+python backtest/backtester.py --config_file configs/tbs.json --start_date 2024-01-01 --end_date 2024-01-31
+```
+
 Example (conceptual):
 
 ```python
