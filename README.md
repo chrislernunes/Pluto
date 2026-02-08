@@ -5,6 +5,33 @@ It focuses on **clean architecture, reproducibility, and fast experimentation** 
 
 This repository is an active research sandbox for building, testing, and optimizing rule-based trading systems.
 
+flowchart TD
+    A[Start Backtest] --> B[Load Market Data]
+    B --> C[Preprocess Data<br/>Timezone • Resample • Clean]
+    C --> D[Initialize Strategy]
+    D --> E[Set Parameters & Session Rules]
+
+    E --> F{Within Trade Session?}
+    F -- No --> G[Skip Bar]
+    G --> H[Next Time Step]
+
+    F -- Yes --> I[Generate Signals]
+    I --> J{Entry / Exit Signal?}
+
+    J -- No --> H
+    J -- Yes --> K[Execute Trade]
+    K --> L[Apply Risk Rules<br/>SL • TP • Position Size]
+    L --> M[Update Positions & Equity]
+
+    M --> H
+    H --> F
+
+    H --> N[End of Data]
+    N --> O[Generate Tradebook]
+    O --> P[Calculate Metrics]
+    P --> Q[Store Benchmark Results]
+    Q --> R[End Backtest]
+
 ---
 
 ## 📂 Repository Structure
