@@ -1,4 +1,4 @@
-# Pluto_test – Backtesting Engine 🚀
+# Pluto – Backtesting Engine 🚀
 
 Pluto_test is a **Python-based quantitative backtesting engine** built for systematic traders and researchers.  
 It focuses on **clean architecture, reproducibility, and fast experimentation** for intraday and swing trading strategies.
@@ -53,8 +53,8 @@ Pluto_test/
 Clone the repository:
 
 ```bash
-git clone https://github.com/chrislernunes/Pluto_test.git
-cd Pluto_test
+git clone https://github.com/chrislernunes/Pluto.git
+cd Pluto
 ```
 
 Install dependencies:
@@ -155,6 +155,6 @@ Pluto_test is built to answer one question:
 
 **“Does this idea actually work — under real constraints?”**
 
-If you can define your edge in rules, Pluto_test can test it.
+If you can define your edge in rules, Pluto can test it.
 
 Happy researching 📈
