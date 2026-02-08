@@ -1,0 +1,28 @@
+import os
+import datetime
+import json
+import pandas as pd
+from modules.ma_toolbox.ma_toolbox import *
+import multiprocessing
+from functools import partial
+
+MARGIN = 100000
+from  backtest.backtester_pos import *
+
+# config_file = "/home/pluto/backtest/configs/putrcs.json"
+start_dt = datetime.datetime.strptime("2019-07-01", "%Y-%m-%d").date()
+# start_dt = datetime.datetime.strptime("2024-12-01", "%Y-%m-%d").date()
+end_dt = datetime.datetime.strptime("2025-04-01", "%Y-%m-%d").date()
+
+uids = ["putrcs_x0_315_NIFTY_M_0_0.99_0.99_0.5_0.25_3",
+        "putrcs_x0_315_NIFTY_M_0_0.99_0.99_0.5_0.25_4",
+        "putrcs_x0_315_NIFTY_M_0_0.99_0.99_0.5_0.25_5",
+        "putrcs_x0_315_NIFTY_M_0_0.99_0.99_0.5_0.25_6",
+        "putrcs_x0_315_NIFTY_M_0_0.99_0.99_0.5_0.25_7",]
+
+tradebook_dir = os.path.join("storage", "tradebooks", "positional", "putrcs_sma_daily")
+
+with multiprocessing.Pool(processes=22) as pool:
+        pool.map(partial(run_simulation,
+                start_date=start_dt,
+                end_date=end_dt,output_dir=tradebook_dir),uids)  
