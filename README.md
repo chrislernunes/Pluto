@@ -76,26 +76,138 @@ python setup.py build_ext --inplace
 Example (conceptual):
 
 ```python
-from backtest.engine import BacktestEngine
-from strategies.orb import ORBStrategy
+import datetime, time
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+plt.style.use('dark_background')
 
-engine = BacktestEngine(
-    symbol="XAUUSD",
-    timeframe="5m",
-    initial_capital=100_000
-)
+from utils.definitions import *
+from utils.sessions import *
+import direct_redis, math
 
-results = engine.run(
-    strategy=ORBStrategy,
-    params={
-        "orb_minutes": 5,
-        "stop_loss_pct": 0.3,
-        "take_profit_pct": 0.6
-    },
-    session=("07:00", "23:00")
-)
+if REDIS:
+    from engine.ems import EventInterfacePositional
+else:
+    from engine.ems_db import EventInterfacePositional
 
-print(results.summary)
+r = direct_redis.DirectRedis()
+
+
+class BTSTDIRV2(EventInterfacePositional):
+    
+    def __init__(self):
+        super().__init__()
+        self.strat_id = self.__class__.__name__.lower()
+
+        self.position_ce = 0
+        self.position_pe = 0
+
+        self.symbol_ce = None
+        self.prices_ce = []
+
+        self.symbol_pe = None
+        self.prices_pe = []
+
+        self.symbol_ce_hedge = None
+        self.symbol_pe_hedge = None
+        self.last_active_date = None
+
+        self.sl_updated_ce = False
+        self.sl_updated_pe = False
+
+    def get_random_uid(self):
+        # Select
+        self.active_weekday = 99#np.random.choice(weekdays)
+        self.session = np.rand.random.choice(timeframes)
+        self.underlying = np.random.choice(['MIDCPNIFTY']) # 'NIFTY', 'FINNIFTY', 'BANKNIFTY', 'SENSEX', 
+        self.selector = 'P' # nom.choice(['x0'])
+        self.timeframe = 1 #npp.random.choice(selectors)
+        if self.selector == 'M':
+            self.selector_val = np.random.choice(moneynesses)
+        elif self.selector == 'P':
+            self.selector_val = np.random.choice(range(5, 20, 5)) # np.random.choice([15, 25, 50, 75, 100])
+        # self.hedge_shift = np.random.choice(hedge_shifts)
+
+        self.sl_pct = round(np.random.choice(np.arange(0.3, 0.5, 0.05)), 2) #round(.05 * round(np.random.choice(np.random.rand(10)*0.5).round(2)/.05), 2)
+        self.tgt_pct = round(np.random.choice(np.arange(0.6, 0.9, 0.05)), 2) #round(.05 * round(np.random.choice(np.random.random(1)).round(2)/.05), 2) #np.random.choice(tgt_pcts)
+        self.max_reset = np.random.choice([0,1])
+        self.trail_on = np.random.choice([True])
+        self.delay = np.random.choice(range(0, 120, 30))
+        # ...
+        if self.session in ['x0', 'x1', 'x2', 'y0', 't1']:
+            orb_sizes = [15, 30, 45, 60, 75, 90]
+        else:
+            orb_sizes = [5, 10, 15, 20, 25, 30]
+        self.orb_size = np.random.choice(orb_sizes)
+        self.breakout_factor = round(np.random.choice(np.arange(1.0, 1.5, 0.05)), 2)
+        
+        self.ohlc = np.random.choice(['o', 'c'])
+        self.delay_exit = np.random.choice(range(0, 10, 1))
+        self.strat_type = np.random.choice(['r', 'n']) # r - Roll over at EOD , n - directly enter next expiry
+        self.trail_pct = np.random.choice([0.05, 0.025, 0.01])
+        # ...
+        return self.get_uid_from_params()
+
+    def set_params_from_uid(self, uid):
+        s = uid.split('_')
+        try:
+            print(s[0], self.strat_id)
+            assert s[0] == self.strat_id
+        except AssertionError:
+            raise ValueError(f'Invalid UID {uid} for strat ID {self.strat_id}')
+        s = s[1:]
+        self.active_weekday = int(s.pop(0))
+        self.session = s.pop(0)
+        self.delay = int(s.pop(0))#=='True'
+        self.timeframe = int(s.pop(0))
+        self.underlying = s.pop(0)
+        self.selector = s.pop(0)
+        self.selector_val = int(s.pop(0))
+        # self.hedge_shift = int(s.pop(0))
+        self.sl_pct = float(s.pop(0))
+        self.tgt_pct = float(s.pop(0))
+        self.max_reset = int(s.pop(0))
+        self.trail_on = s.pop(0)=='True'
+        # ...
+        self.orb_size = int(s.pop(0))
+        self.breakout_factor = float(s.pop(0))
+        self.ohlc = s.pop(0)
+        self.delay_exit = int(s.pop(0))
+        self.strat_type = s.pop(0)
+        self.trail_pct = float(s.pop(0))
+        self.roll_or_no=s.pop(0)=='True'
+        # self.system_tag = s.pop(0)
+
+        # CROSS CHECK
+        assert len(s)==0
+        self.gen_uid = self.get_uid_from_params()
+        assert uid == self.gen_uid
+        self.uid = uid
+        print(self.uid)
+    
+    def get_uid_from_params(self):
+        return f"""
+        {self.strat_id}_
+        {self.active_weekday}_
+        {self.session}_
+        {self.delay}_
+        {self.timeframe}_
+        {self.underlying}_
+        {self.selector}_
+        {self.selector_val}_
+        {self.sl_pct}_
+        {self.tgt_pct}_
+        {self.max_reset}_
+        {self.trail_on}_
+        {self.orb_size}_
+        {self.breakout_factor}_
+        {self.ohlc}_
+        {self.delay_exit}_
+        {self.strat_type}_
+        {self.trail_pct}_
+        {self.roll_or_no}
+        """.replace('\n', '').replace(' ', '').strip('_')
 ```
 
 > Exact APIs may vary as the engine evolves.
