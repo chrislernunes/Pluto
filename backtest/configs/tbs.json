@@ -1,0 +1,15 @@
+{
+  "strategy": "tbs",
+  "active_dte": 0,
+  "session": "x0",
+  "delay": 0,
+  "timeframe": 1,
+  "underlying": "NIFTY",
+  "selector": "P",
+  "selector_val": 20,
+  "hedge_shift": 10,
+  "sl_pct": 0.25,
+  "tgt_pct": 0.5,
+  "trail_on": true,
+  "Target": true
+}

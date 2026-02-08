@@ -1,0 +1,15 @@
+{
+  "strategy": "ptheta",
+  "active_weekday": 99,
+  "session": "x0",
+  "delay": 20,
+  "dte_entry": 3,
+  "underlying": "NIFTY",
+  "selector": "P",
+  "sl_pct": 0.35,
+  "tgt_pct": 0.6,
+  "max_reset": 200,
+  "trail_on": false,
+  "Target": false,
+  "ps": 0.02
+}

@@ -1,0 +1,17 @@
+{
+  "strategy": "minpmisl",
+  "active_weekday": 0,
+  "session": "x0",
+  "delay": 20,
+  "timeframe": 1,
+  "underlying": "NIFTY",
+  "selector": "P",
+  "selector_val": 75,
+  "hedge_shift": 99,
+  "sl_pct": 0.0,
+  "tgt_pct": 0.6,
+  "max_reset": 2,
+  "trail_on": false,
+  "Target": true,
+  "ps": 0.01
+}

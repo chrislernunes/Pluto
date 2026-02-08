@@ -1,0 +1,17 @@
+{
+  "strategy": "tbsdr",
+  "active_weekday": 0,
+  "session": "x0",
+  "delay": 0,
+  "timeframe": 1,
+  "underlying": "NIFTY",
+  "selector": "P",
+  "selector_val": 30,
+  "hedge_shift": 99,
+  "sl_pct": 0.5,
+  "tgt_pct": 0.8,
+  "max_reset": 4,
+  "trail_on": true,
+  "selector_dir": "P",
+  "selector_val_dir": 50
+}

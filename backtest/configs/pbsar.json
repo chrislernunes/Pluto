@@ -1,0 +1,18 @@
+{
+  "strategy": "pbsarhl",
+  "active_weekday": 99,
+  "session": "x0",
+  "delay": 0,
+  "underlying": "NIFTY",
+  "selector": "M",
+  "selector_val": 0,
+  "hedge_shift": 10,
+  "sl_pct": 0.99,
+  "tgt_pct": 0.99,
+  "trail_on": false,
+  "max_reset": 99,
+  "af": 0.025,
+  "max_af": 0.025,
+  "timeframe": 5,
+  "itmperc": 0.0
+}

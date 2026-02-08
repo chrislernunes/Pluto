@@ -1,0 +1,13 @@
+{
+  "strategy": "putrcs",
+  "session": "x0",
+  "delay": 315,
+  "underlying": "NIFTY",
+  "selector": "M",
+  "selector_val": 0,
+  "sl_pct": 0.3,
+  "tgt_pct": 0.99,
+  "mult_1":0.5,
+  "mult_2":0.25,
+  "window":5
+}

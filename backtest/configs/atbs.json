@@ -1,0 +1,19 @@
+{
+  "strategy": "atbs",
+  "active_dte": 0,
+  "session": "x0",
+  "delay": 1,
+  "timeframe": 1,
+  "underlying": "NIFTY",
+  "selector": "PCTA",
+  "selector_val": 0.5,
+  "hedge_shift": 0,
+  "sl_pct": 0.2,
+  "tgt_pct": 0.5,
+  "max_reset": 1,
+  "trail_on": true,
+  "sl_to_cost": true,
+  "sell_prem_perc": 0.2,
+  "hedge_prem_perc": 0.05,
+  "reentry_type": "sl"
+}

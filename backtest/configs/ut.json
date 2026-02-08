@@ -1,0 +1,17 @@
+{
+  "strategy": "ut",
+  "active_weekday": 99,
+  "session": "x0",
+  "delay": 0,
+  "timeframe": 1,
+  "underlying": "NIFTY",
+  "selector": "M",
+  "selector_val": 0,
+  "hedge_shift": 10,
+  "sl_pct": 0.5,
+  "tgt_pct": 0.5,
+  "max_reset": 1,
+  "trail_on": false,
+  "trigger_pct": 0.2,
+  "trail_pct": 0.1
+}

@@ -1,0 +1,21 @@
+{
+  "strategy": "btstdir",
+  "active_weekday": "99",
+  "session": "o3",
+  "delay": 0,
+  "timeframe": 1,
+  "underlying": "NIFTY",
+  "selector": "M",
+  "selector_val": 0,
+  "sl_pct": 0.5,
+  "tgt_pct": 1.99,
+  "max_reset": 0,
+  "trail_on": false,
+  "orb_size": 60,
+  "breakout_factor": 0.003,
+  "ohlc": "c",
+  "delay_exit": 12,
+  "strat_type": "n",
+  "trail_pct": 0.4,
+  "roll_or_no": true
+}
