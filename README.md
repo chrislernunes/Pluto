@@ -10,7 +10,7 @@ This repository is an active research sandbox for building, testing, and optimiz
 ## 📂 Repository Structure
 
 ```
-Pluto_test/
+Pluto/
 │
 ├── backtest/               # Backtest orchestration & control flow
 ├── engine/                 # Core execution engine (entries, exits, positions)
