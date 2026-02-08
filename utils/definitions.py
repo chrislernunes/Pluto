@@ -1,0 +1,91 @@
+# INST_PATH = '../zerodha_websocket/inst_config/'
+# TICK_PATH = '../zerodha_websocket/ticks/'
+INST_PATH = '../../mnt/disk1/zerodha_websocket/inst_config/'
+TICK_PATH = '../../mnt/disk1/zerodha_websocket/ticks/'
+ZERODHA_DAILY_DATA_PATH = '../../mnt/disk1/data/zerodha/'
+TRUEDATA_DAILY_DATA_PATH = '../../mnt/disk1/data/true_data/'
+
+CALL = "CE"
+PUT = "PE"
+
+BUY = 'BUY'
+SELL = 'SELL'
+
+MON = 0
+TUE = 1
+WED = 2
+THU = 3
+FRI = 4
+SAT = 5
+SUN = 6
+
+JAN = 1
+FEB = 2
+MAR = 3
+APR = 4
+MAY = 5
+JUN = 6
+JUL = 7
+AUG = 8
+SEP = 9
+OCT = 10
+NOV = 11
+DEC = 12
+
+ONELEG = 1
+ALLLEGS = 2
+ONELEGSL = 3
+
+PREMIUM = 1
+UNDERLYING = 2
+EXPIRYDAY = 4
+N = 'NIFTY'
+BN = 'BANKNIFTY'
+FN = 'FINNIFTY'
+BOTH = "BOTH"
+
+SL = 1
+TARGET = 2
+SQUAREOFF = 3
+SQUAREOFFEOD = 4
+
+YES = 1
+NO = 0
+
+NODEBUG = 0
+DEBUGPOS = 1
+DEBUGTIME = 2
+
+BULL = 1
+BEAR = -1
+
+BNLOTSIZE = 25
+NLOTSIZE = 50
+
+SLIPPAGE = 0.01
+
+ENTERBULLPOSITION = 2
+ENTERBEARPOSITION = -2
+STOPLOSSHIT = -1
+TARGETREACHED = 1
+EXITTIME = 0
+
+LIVE = 1
+PAPERTRADING = 0
+
+ACTIVE = 1
+SQUAREDOFF = 0
+
+TREND = 1
+MR = 0
+
+FNEXPIRY = TUE
+NEXPIRY = THU
+BNEXPIRY = WED
+
+BNLOTSIZE = 25
+NLOTSIZE = 50
+FNLOTSIZE = 40
+
+MARGIN = 100000
+REDIS = 0
