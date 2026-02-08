@@ -257,8 +257,6 @@ Tests cover execution logic, metrics accuracy, and strategy behavior.
 This project is for **research and educational purposes only**.  
 It is **not** financial advice and is **not intended for live trading**.
 
-Past performance does not guarantee future results.
-
 ---
 
 ## 🌌 Final Note
