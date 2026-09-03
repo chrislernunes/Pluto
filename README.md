@@ -1,4 +1,4 @@
-# Pluto – Backtesting Engine 🚀
+# Pluto
 
 Pluto is a **Python-based quantitative backtesting engine** built for systematic traders and researchers.  
 It focuses on **clean architecture, reproducibility, and fast experimentation** for intraday and swing trading strategies.
@@ -6,7 +6,7 @@ It focuses on **clean architecture, reproducibility, and fast experimentation** 
 This repository is an active research sandbox for building, testing, and optimizing rule-based trading systems.
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 Pluto/
@@ -24,28 +24,6 @@ Pluto/
 └── README.md               # Project documentation
 ```
 
----
-
-## 🧠 Design Philosophy
-
-- **Tradebook-first**: All metrics are derived from executed trades
-- **Deterministic runs**: Same inputs → same outputs
-- **Strategy isolation**: Each configuration is evaluated independently
-- **Research-focused**: Built for testing ideas, not live trading
-
----
-
-## ✨ Key Features
-
-- Event-driven backtesting loop  
-- Intraday & multi-day strategy support  
-- Strict session / time-window controls  
-- Parameter optimization via grid search  
-- Detailed trade logs & benchmark results  
-- Clean separation of data, logic, execution, and analytics  
-- Optional Cython acceleration  
-
----
 
 ## ⚙️ Installation
 
@@ -209,60 +187,8 @@ class BTSTDIRV2(EventInterfacePositional):
         """.replace('\n', '').replace(' ', '').strip('_')
 ```
 
-> Exact APIs may vary as the engine evolves.
 
----
 
-## 📊 Metrics Included
-
-- Total PnL  
-- Win rate  
-- Expectancy  
-- Max & average drawdown  
-- Sharpe & Sortino ratios  
-- Best / worst trades  
-- Trade frequency  
-
-All metrics are calculated **from the tradebook**, not candle-level assumptions.
-
----
-
-## 🔍 Optimization
-
-Pluto_test supports parameter sweeps for strategy research:
-
-- Grid search over strategy parameters
-- Stored benchmark results
-- Easy comparison across variants
-
-Ideal for robustness testing and drawdown control research.
-
----
-
-## 🧪 Testing
-
-Run the test suite:
-
-```bash
-pytest
-```
-
-Tests cover execution logic, metrics accuracy, and strategy behavior.
-
----
-
-## ⚠️ Disclaimer
-
-This project is for **research and educational purposes only**.  
-It is **not** financial advice and is **not intended for live trading**.
-
----
-
-## 🌌 Final Note
-
-Pluto_test is built to answer one question:
-
-**“Does this idea actually work — under real constraints?”**
 
 If you can define your edge in rules, Pluto can test it.
 
