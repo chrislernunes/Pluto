@@ -25,7 +25,7 @@ Pluto/
 ```
 
 
-## ⚙️ Installation
+## Installation
 
 Clone the repository:
 
@@ -48,7 +48,7 @@ python setup.py build_ext --inplace
 
 ---
 
-## 🚀 Running a Backtest
+## Running a Backtest
 
 Example (conceptual):
 
@@ -187,9 +187,3 @@ class BTSTDIRV2(EventInterfacePositional):
         """.replace('\n', '').replace(' ', '').strip('_')
 ```
 
-
-
-
-If you can define your edge in rules, Pluto can test it.
-
-Happy researching 📈
