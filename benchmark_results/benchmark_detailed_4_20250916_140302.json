@@ -1,0 +1,6078 @@
+{
+  "version": "4",
+  "timestamp": "20250916_140302",
+  "summary": {
+    "total_functions_tested": 21,
+    "total_function_calls": 342,
+    "overall_success_rate": 100.0
+  },
+  "function_benchmarks": {
+    "get_lot_size": {
+      "function_name": "get_lot_size",
+      "total_calls": 2,
+      "successful_calls": 2,
+      "failed_calls": 0,
+      "avg_execution_time": 2.2345011529978365e-06,
+      "min_execution_time": 9.220020729117095e-07,
+      "max_execution_time": 3.5470002330839634e-06,
+      "std_execution_time": 1.8561539996600117e-06,
+      "success_rate": 100.0,
+      "errors": []
+    },
+    "get_freeze_quantity": {
+      "function_name": "get_freeze_quantity",
+      "total_calls": 2,
+      "successful_calls": 2,
+      "failed_calls": 0,
+      "avg_execution_time": 1.1520023690536618e-06,
+      "min_execution_time": 5.210022209212184e-07,
+      "max_execution_time": 1.7830025171861053e-06,
+      "std_execution_time": 8.923689673483335e-07,
+      "success_rate": 100.0,
+      "errors": []
+    },
+    "get_strike_diff": {
+      "function_name": "get_strike_diff",
+      "total_calls": 2,
+      "successful_calls": 2,
+      "failed_calls": 0,
+      "avg_execution_time": 9.465002221986651e-07,
+      "min_execution_time": 3.00002284348011e-07,
+      "max_execution_time": 1.5929981600493193e-06,
+      "std_execution_time": 9.142861517546333e-07,
+      "success_rate": 100.0,
+      "errors": []
+    },
+    "get_exchange": {
+      "function_name": "get_exchange",
+      "total_calls": 2,
+      "successful_calls": 2,
+      "failed_calls": 0,
+      "avg_execution_time": 2.2094991436460987e-06,
+      "min_execution_time": 5.709989636670798e-07,
+      "max_execution_time": 3.8479993236251175e-06,
+      "std_execution_time": 2.3171891764770855e-06,
+      "success_rate": 100.0,
+      "errors": []
+    },
+    "get_expiry_dates": {
+      "function_name": "get_expiry_dates",
+      "total_calls": 2,
+      "successful_calls": 2,
+      "failed_calls": 0,
+      "avg_execution_time": 1.5319001249736175e-05,
+      "min_execution_time": 4.228000761941075e-06,
+      "max_execution_time": 2.6410001737531275e-05,
+      "std_execution_time": 1.5685043310126444e-05,
+      "success_rate": 100.0,
+      "errors": []
+    },
+    "get_expiry_code": {
+      "function_name": "get_expiry_code",
+      "total_calls": 12,
+      "successful_calls": 12,
+      "failed_calls": 0,
+      "avg_execution_time": 0.0005405380006777705,
+      "min_execution_time": 0.0002880140018532984,
+      "max_execution_time": 0.0008976739991339855,
+      "std_execution_time": 0.00025993905840894857,
+      "success_rate": 100.0,
+      "errors": []
+    },
+    "get_monthly_expiry_code": {
+      "function_name": "get_monthly_expiry_code",
+      "total_calls": 6,
+      "successful_calls": 6,
+      "failed_calls": 0,
+      "avg_execution_time": 2.6075000278069638e-05,
+      "min_execution_time": 1.452699871151708e-05,
+      "max_execution_time": 3.51350026903674e-05,
+      "std_execution_time": 8.94669385367258e-06,
+      "success_rate": 100.0,
+      "errors": []
+    },
+    "get_nearest_expiry": {
+      "function_name": "get_nearest_expiry",
+      "total_calls": 6,
+      "successful_calls": 6,
+      "failed_calls": 0,
+      "avg_execution_time": 3.341316551086493e-05,
+      "min_execution_time": 1.8853999790735543e-05,
+      "max_execution_time": 5.642499672831036e-05,
+      "std_execution_time": 1.57273514433331e-05,
+      "success_rate": 100.0,
+      "errors": []
+    },
+    "parse_date_from_symbol": {
+      "function_name": "parse_date_from_symbol",
+      "total_calls": 11,
+      "successful_calls": 11,
+      "failed_calls": 0,
+      "avg_execution_time": 7.818581864491783e-05,
+      "min_execution_time": 8.594997780164704e-06,
+      "max_execution_time": 0.000747916001273552,
+      "std_execution_time": 0.00022221163240522448,
+      "success_rate": 100.0,
+      "errors": []
+    },
+    "parse_strike_from_symbol": {
+      "function_name": "parse_strike_from_symbol",
+      "total_calls": 11,
+      "successful_calls": 11,
+      "failed_calls": 0,
+      "avg_execution_time": 3.177727855720811e-06,
+      "min_execution_time": 1.65300298249349e-06,
+      "max_execution_time": 1.3354001566767693e-05,
+      "std_execution_time": 3.4413177835251196e-06,
+      "success_rate": 100.0,
+      "errors": []
+    },
+    "find_symbol_by_moneyness": {
+      "function_name": "find_symbol_by_moneyness",
+      "total_calls": 48,
+      "successful_calls": 48,
+      "failed_calls": 0,
+      "avg_execution_time": 0.017258430333337554,
+      "min_execution_time": 0.0034214750012324657,
+      "max_execution_time": 0.06251469400012866,
+      "std_execution_time": 0.016155586505293893,
+      "success_rate": 100.0,
+      "errors": []
+    },
+    "find_symbol_by_premium": {
+      "function_name": "find_symbol_by_premium",
+      "total_calls": 24,
+      "successful_calls": 24,
+      "failed_calls": 0,
+      "avg_execution_time": 0.007551459999983005,
+      "min_execution_time": 0.00547133500003838,
+      "max_execution_time": 0.010438948000228265,
+      "std_execution_time": 0.0019136622234615021,
+      "success_rate": 100.0,
+      "errors": []
+    },
+    "find_symbol_by_delta": {
+      "function_name": "find_symbol_by_delta",
+      "total_calls": 24,
+      "successful_calls": 24,
+      "failed_calls": 0,
+      "avg_execution_time": 0.005419177916489086,
+      "min_execution_time": 0.0033933129998331424,
+      "max_execution_time": 0.00913749400206143,
+      "std_execution_time": 0.002143189930679359,
+      "success_rate": 100.0,
+      "errors": []
+    },
+    "find_symbol_by_itm_percent": {
+      "function_name": "find_symbol_by_itm_percent",
+      "total_calls": 24,
+      "successful_calls": 24,
+      "failed_calls": 0,
+      "avg_execution_time": 0.007828303791332777,
+      "min_execution_time": 0.00583135299893911,
+      "max_execution_time": 0.012154018000728684,
+      "std_execution_time": 0.0020046843968251757,
+      "success_rate": 100.0,
+      "errors": []
+    },
+    "get_tick": {
+      "function_name": "get_tick",
+      "total_calls": 30,
+      "successful_calls": 30,
+      "failed_calls": 0,
+      "avg_execution_time": 0.021853249866641514,
+      "min_execution_time": 0.007089135000569513,
+      "max_execution_time": 0.07037676599793485,
+      "std_execution_time": 0.016122783749905695,
+      "success_rate": 100.0,
+      "errors": []
+    },
+    "get_last_available_tick": {
+      "function_name": "get_last_available_tick",
+      "total_calls": 10,
+      "successful_calls": 10,
+      "failed_calls": 0,
+      "avg_execution_time": 0.013749314400411095,
+      "min_execution_time": 0.006303709000349045,
+      "max_execution_time": 0.02206192100129556,
+      "std_execution_time": 0.006262092634904082,
+      "success_rate": 100.0,
+      "errors": []
+    },
+    "get_all_ticks_by_symbol": {
+      "function_name": "get_all_ticks_by_symbol",
+      "total_calls": 5,
+      "successful_calls": 5,
+      "failed_calls": 0,
+      "avg_execution_time": 0.07940020440000808,
+      "min_execution_time": 0.055968467000639066,
+      "max_execution_time": 0.11413726399769075,
+      "std_execution_time": 0.023390736756383132,
+      "success_rate": 100.0,
+      "errors": []
+    },
+    "get_dte": {
+      "function_name": "get_dte",
+      "total_calls": 30,
+      "successful_calls": 30,
+      "failed_calls": 0,
+      "avg_execution_time": 0.0008361352665815502,
+      "min_execution_time": 0.0003872580018651206,
+      "max_execution_time": 0.0012846019999415148,
+      "std_execution_time": 0.0002621681606814118,
+      "success_rate": 100.0,
+      "errors": []
+    },
+    "replace_strike_in_symbol": {
+      "function_name": "replace_strike_in_symbol",
+      "total_calls": 30,
+      "successful_calls": 30,
+      "failed_calls": 0,
+      "avg_execution_time": 3.7028335403495778e-06,
+      "min_execution_time": 3.216002369299531e-06,
+      "max_execution_time": 9.807998139876872e-06,
+      "std_execution_time": 1.1773019714651087e-06,
+      "success_rate": 100.0,
+      "errors": []
+    },
+    "shift_strike_in_symbol": {
+      "function_name": "shift_strike_in_symbol",
+      "total_calls": 50,
+      "successful_calls": 50,
+      "failed_calls": 0,
+      "avg_execution_time": 5.711559933843091e-06,
+      "min_execution_time": 5.350000719772652e-06,
+      "max_execution_time": 9.85799852060154e-06,
+      "std_execution_time": 6.288373253974464e-07,
+      "success_rate": 100.0,
+      "errors": []
+    },
+    "get_underlying": {
+      "function_name": "get_underlying",
+      "total_calls": 11,
+      "successful_calls": 11,
+      "failed_calls": 0,
+      "avg_execution_time": 1.22318207021718e-06,
+      "min_execution_time": 1.0219991963822395e-06,
+      "max_execution_time": 2.1839987311977893e-06,
+      "std_execution_time": 3.3090609074388873e-07,
+      "success_rate": 100.0,
+      "errors": []
+    }
+  },
+  "raw_results": [
+    {
+      "function_name": "get_lot_size",
+      "input_params": {
+        "underlying": "NIFTY"
+      },
+      "execution_time": 3.5470002330839634e-06,
+      "success": true,
+      "result": 75,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_lot_size",
+      "input_params": {
+        "underlying": "SENSEX"
+      },
+      "execution_time": 9.220020729117095e-07,
+      "success": true,
+      "result": 20,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_freeze_quantity",
+      "input_params": {
+        "underlying": "NIFTY"
+      },
+      "execution_time": 1.7830025171861053e-06,
+      "success": true,
+      "result": 1800,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_freeze_quantity",
+      "input_params": {
+        "underlying": "SENSEX"
+      },
+      "execution_time": 5.210022209212184e-07,
+      "success": true,
+      "result": 1000,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_strike_diff",
+      "input_params": {
+        "underlying": "NIFTY"
+      },
+      "execution_time": 1.5929981600493193e-06,
+      "success": true,
+      "result": 50,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_strike_diff",
+      "input_params": {
+        "underlying": "SENSEX"
+      },
+      "execution_time": 3.00002284348011e-07,
+      "success": true,
+      "result": 100,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_exchange",
+      "input_params": {
+        "underlying": "NIFTY"
+      },
+      "execution_time": 3.8479993236251175e-06,
+      "success": true,
+      "result": "NSE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_exchange",
+      "input_params": {
+        "underlying": "SENSEX"
+      },
+      "execution_time": 5.709989636670798e-07,
+      "success": true,
+      "result": "BSE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_expiry_dates",
+      "input_params": {
+        "underlying": "NIFTY"
+      },
+      "execution_time": 2.6410001737531275e-05,
+      "success": true,
+      "result": [
+        "2018-10-25 00:00:00",
+        "2018-11-29 00:00:00",
+        "2018-12-27 00:00:00",
+        "2019-01-31 00:00:00",
+        "2019-02-14 00:00:00",
+        "2019-02-21 00:00:00",
+        "2019-02-28 00:00:00",
+        "2019-03-07 00:00:00",
+        "2019-03-14 00:00:00",
+        "2019-03-20 00:00:00",
+        "2019-03-28 00:00:00",
+        "2019-04-04 00:00:00",
+        "2019-04-11 00:00:00",
+        "2019-04-18 00:00:00",
+        "2019-04-25 00:00:00",
+        "2019-05-02 00:00:00",
+        "2019-05-09 00:00:00",
+        "2019-05-16 00:00:00",
+        "2019-05-23 00:00:00",
+        "2019-05-30 00:00:00",
+        "2019-06-06 00:00:00",
+        "2019-06-13 00:00:00",
+        "2019-06-20 00:00:00",
+        "2019-06-27 00:00:00",
+        "2019-07-04 00:00:00",
+        "2019-07-11 00:00:00",
+        "2019-07-18 00:00:00",
+        "2019-07-25 00:00:00",
+        "2019-08-01 00:00:00",
+        "2019-08-08 00:00:00",
+        "2019-08-14 00:00:00",
+        "2019-08-22 00:00:00",
+        "2019-08-29 00:00:00",
+        "2019-09-05 00:00:00",
+        "2019-09-12 00:00:00",
+        "2019-09-19 00:00:00",
+        "2019-09-26 00:00:00",
+        "2019-10-03 00:00:00",
+        "2019-10-10 00:00:00",
+        "2019-10-17 00:00:00",
+        "2019-10-24 00:00:00",
+        "2019-10-31 00:00:00",
+        "2019-11-07 00:00:00",
+        "2019-11-14 00:00:00",
+        "2019-11-21 00:00:00",
+        "2019-11-28 00:00:00",
+        "2019-12-05 00:00:00",
+        "2019-12-12 00:00:00",
+        "2019-12-19 00:00:00",
+        "2019-12-26 00:00:00",
+        "2020-01-02 00:00:00",
+        "2020-01-09 00:00:00",
+        "2020-01-16 00:00:00",
+        "2020-01-23 00:00:00",
+        "2020-01-30 00:00:00",
+        "2020-02-06 00:00:00",
+        "2020-02-13 00:00:00",
+        "2020-02-20 00:00:00",
+        "2020-02-27 00:00:00",
+        "2020-03-05 00:00:00",
+        "2020-03-12 00:00:00",
+        "2020-03-19 00:00:00",
+        "2020-03-26 00:00:00",
+        "2020-04-01 00:00:00",
+        "2020-04-09 00:00:00",
+        "2020-04-16 00:00:00",
+        "2020-04-23 00:00:00",
+        "2020-04-30 00:00:00",
+        "2020-05-07 00:00:00",
+        "2020-05-14 00:00:00",
+        "2020-05-21 00:00:00",
+        "2020-05-28 00:00:00",
+        "2020-06-04 00:00:00",
+        "2020-06-11 00:00:00",
+        "2020-06-18 00:00:00",
+        "2020-06-25 00:00:00",
+        "2020-07-02 00:00:00",
+        "2020-07-09 00:00:00",
+        "2020-07-16 00:00:00",
+        "2020-07-23 00:00:00",
+        "2020-07-30 00:00:00",
+        "2020-08-06 00:00:00",
+        "2020-08-13 00:00:00",
+        "2020-08-20 00:00:00",
+        "2020-08-27 00:00:00",
+        "2020-09-03 00:00:00",
+        "2020-09-10 00:00:00",
+        "2020-09-17 00:00:00",
+        "2020-09-24 00:00:00",
+        "2020-10-01 00:00:00",
+        "2020-10-08 00:00:00",
+        "2020-10-15 00:00:00",
+        "2020-10-22 00:00:00",
+        "2020-10-29 00:00:00",
+        "2020-11-05 00:00:00",
+        "2020-11-12 00:00:00",
+        "2020-11-19 00:00:00",
+        "2020-11-26 00:00:00",
+        "2020-12-03 00:00:00",
+        "2020-12-10 00:00:00",
+        "2020-12-17 00:00:00",
+        "2020-12-24 00:00:00",
+        "2020-12-31 00:00:00",
+        "2021-01-07 00:00:00",
+        "2021-01-14 00:00:00",
+        "2021-01-21 00:00:00",
+        "2021-01-28 00:00:00",
+        "2021-02-04 00:00:00",
+        "2021-02-11 00:00:00",
+        "2021-02-18 00:00:00",
+        "2021-02-25 00:00:00",
+        "2021-03-04 00:00:00",
+        "2021-03-10 00:00:00",
+        "2021-03-18 00:00:00",
+        "2021-03-25 00:00:00",
+        "2021-04-01 00:00:00",
+        "2021-04-08 00:00:00",
+        "2021-04-15 00:00:00",
+        "2021-04-22 00:00:00",
+        "2021-04-29 00:00:00",
+        "2021-05-06 00:00:00",
+        "2021-05-12 00:00:00",
+        "2021-05-20 00:00:00",
+        "2021-05-27 00:00:00",
+        "2021-06-03 00:00:00",
+        "2021-06-10 00:00:00",
+        "2021-06-17 00:00:00",
+        "2021-06-24 00:00:00",
+        "2021-07-01 00:00:00",
+        "2021-07-08 00:00:00",
+        "2021-07-15 00:00:00",
+        "2021-07-22 00:00:00",
+        "2021-07-29 00:00:00",
+        "2021-08-05 00:00:00",
+        "2021-08-12 00:00:00",
+        "2021-08-18 00:00:00",
+        "2021-08-26 00:00:00",
+        "2021-09-02 00:00:00",
+        "2021-09-09 00:00:00",
+        "2021-09-16 00:00:00",
+        "2021-09-23 00:00:00",
+        "2021-09-30 00:00:00",
+        "2021-10-07 00:00:00",
+        "2021-10-14 00:00:00",
+        "2021-10-21 00:00:00",
+        "2021-10-28 00:00:00",
+        "2021-11-03 00:00:00",
+        "2021-11-11 00:00:00",
+        "2021-11-18 00:00:00",
+        "2021-11-25 00:00:00",
+        "2021-12-02 00:00:00",
+        "2021-12-09 00:00:00",
+        "2021-12-16 00:00:00",
+        "2021-12-23 00:00:00",
+        "2021-12-30 00:00:00",
+        "2022-01-06 00:00:00",
+        "2022-01-13 00:00:00",
+        "2022-01-20 00:00:00",
+        "2022-01-27 00:00:00",
+        "2022-02-03 00:00:00",
+        "2022-02-10 00:00:00",
+        "2022-02-17 00:00:00",
+        "2022-02-24 00:00:00",
+        "2022-03-03 00:00:00",
+        "2022-03-10 00:00:00",
+        "2022-03-17 00:00:00",
+        "2022-03-24 00:00:00",
+        "2022-03-31 00:00:00",
+        "2022-04-07 00:00:00",
+        "2022-04-13 00:00:00",
+        "2022-04-21 00:00:00",
+        "2022-04-28 00:00:00",
+        "2022-05-05 00:00:00",
+        "2022-05-12 00:00:00",
+        "2022-05-19 00:00:00",
+        "2022-05-26 00:00:00",
+        "2022-06-02 00:00:00",
+        "2022-06-09 00:00:00",
+        "2022-06-16 00:00:00",
+        "2022-06-23 00:00:00",
+        "2022-06-30 00:00:00",
+        "2022-07-07 00:00:00",
+        "2022-07-14 00:00:00",
+        "2022-07-21 00:00:00",
+        "2022-07-28 00:00:00",
+        "2022-08-04 00:00:00",
+        "2022-08-11 00:00:00",
+        "2022-08-18 00:00:00",
+        "2022-08-25 00:00:00",
+        "2022-09-01 00:00:00",
+        "2022-09-08 00:00:00",
+        "2022-09-15 00:00:00",
+        "2022-09-22 00:00:00",
+        "2022-09-29 00:00:00",
+        "2022-10-06 00:00:00",
+        "2022-10-13 00:00:00",
+        "2022-10-20 00:00:00",
+        "2022-10-27 00:00:00",
+        "2022-11-03 00:00:00",
+        "2022-11-10 00:00:00",
+        "2022-11-17 00:00:00",
+        "2022-11-24 00:00:00",
+        "2022-12-01 00:00:00",
+        "2022-12-08 00:00:00",
+        "2022-12-15 00:00:00",
+        "2022-12-22 00:00:00",
+        "2022-12-29 00:00:00",
+        "2023-01-05 00:00:00",
+        "2023-01-12 00:00:00",
+        "2023-01-19 00:00:00",
+        "2023-01-25 00:00:00",
+        "2023-02-02 00:00:00",
+        "2023-02-09 00:00:00",
+        "2023-02-16 00:00:00",
+        "2023-02-23 00:00:00",
+        "2023-03-02 00:00:00",
+        "2023-03-09 00:00:00",
+        "2023-03-16 00:00:00",
+        "2023-03-23 00:00:00",
+        "2023-03-29 00:00:00",
+        "2023-03-30 00:00:00",
+        "2023-04-06 00:00:00",
+        "2023-04-13 00:00:00",
+        "2023-04-20 00:00:00",
+        "2023-04-27 00:00:00",
+        "2023-05-04 00:00:00",
+        "2023-05-11 00:00:00",
+        "2023-05-18 00:00:00",
+        "2023-05-25 00:00:00",
+        "2023-06-01 00:00:00",
+        "2023-06-08 00:00:00",
+        "2023-06-15 00:00:00",
+        "2023-06-22 00:00:00",
+        "2023-06-28 00:00:00",
+        "2023-07-06 00:00:00",
+        "2023-07-13 00:00:00",
+        "2023-07-20 00:00:00",
+        "2023-07-27 00:00:00",
+        "2023-08-03 00:00:00",
+        "2023-08-10 00:00:00",
+        "2023-08-17 00:00:00",
+        "2023-08-24 00:00:00",
+        "2023-08-31 00:00:00",
+        "2023-09-07 00:00:00",
+        "2023-09-14 00:00:00",
+        "2023-09-21 00:00:00",
+        "2023-09-28 00:00:00",
+        "2023-10-05 00:00:00",
+        "2023-10-12 00:00:00",
+        "2023-10-19 00:00:00",
+        "2023-10-26 00:00:00",
+        "2023-11-02 00:00:00",
+        "2023-11-09 00:00:00",
+        "2023-11-16 00:00:00",
+        "2023-11-23 00:00:00",
+        "2023-11-30 00:00:00",
+        "2023-12-07 00:00:00",
+        "2023-12-14 00:00:00",
+        "2023-12-21 00:00:00",
+        "2023-12-28 00:00:00",
+        "2024-01-04 00:00:00",
+        "2024-01-11 00:00:00",
+        "2024-01-18 00:00:00",
+        "2024-01-25 00:00:00",
+        "2024-02-01 00:00:00",
+        "2024-02-08 00:00:00",
+        "2024-02-15 00:00:00",
+        "2024-02-22 00:00:00",
+        "2024-02-29 00:00:00",
+        "2024-03-07 00:00:00",
+        "2024-03-14 00:00:00",
+        "2024-03-21 00:00:00",
+        "2024-03-28 00:00:00",
+        "2024-04-04 00:00:00",
+        "2024-04-10 00:00:00",
+        "2024-04-18 00:00:00",
+        "2024-04-25 00:00:00",
+        "2024-05-02 00:00:00",
+        "2024-05-09 00:00:00",
+        "2024-05-16 00:00:00",
+        "2024-05-23 00:00:00",
+        "2024-05-30 00:00:00",
+        "2024-06-06 00:00:00",
+        "2024-06-13 00:00:00",
+        "2024-06-20 00:00:00",
+        "2024-06-27 00:00:00",
+        "2024-07-04 00:00:00",
+        "2024-07-11 00:00:00",
+        "2024-07-18 00:00:00",
+        "2024-07-25 00:00:00",
+        "2024-08-01 00:00:00",
+        "2024-08-08 00:00:00",
+        "2024-08-14 00:00:00",
+        "2024-08-22 00:00:00",
+        "2024-08-29 00:00:00",
+        "2024-09-05 00:00:00",
+        "2024-09-12 00:00:00",
+        "2024-09-19 00:00:00",
+        "2024-09-26 00:00:00",
+        "2024-10-03 00:00:00",
+        "2024-10-10 00:00:00",
+        "2024-10-17 00:00:00",
+        "2024-10-24 00:00:00",
+        "2024-10-31 00:00:00",
+        "2024-11-07 00:00:00",
+        "2024-11-14 00:00:00",
+        "2024-11-21 00:00:00",
+        "2024-11-28 00:00:00",
+        "2024-12-05 00:00:00",
+        "2024-12-12 00:00:00",
+        "2024-12-19 00:00:00",
+        "2024-12-26 00:00:00",
+        "2025-01-02 00:00:00",
+        "2025-01-09 00:00:00",
+        "2025-01-16 00:00:00",
+        "2025-01-23 00:00:00",
+        "2025-01-30 00:00:00",
+        "2025-02-06 00:00:00",
+        "2025-02-13 00:00:00",
+        "2025-02-20 00:00:00",
+        "2025-02-27 00:00:00",
+        "2025-03-06 00:00:00",
+        "2025-03-13 00:00:00",
+        "2025-03-20 00:00:00",
+        "2025-03-27 00:00:00",
+        "2025-04-03 00:00:00",
+        "2025-04-09 00:00:00",
+        "2025-04-17 00:00:00",
+        "2025-04-24 00:00:00",
+        "2025-04-30 00:00:00",
+        "2025-05-08 00:00:00",
+        "2025-05-15 00:00:00",
+        "2025-05-22 00:00:00",
+        "2025-05-29 00:00:00",
+        "2025-06-05 00:00:00",
+        "2025-06-12 00:00:00",
+        "2025-06-19 00:00:00",
+        "2025-06-26 00:00:00",
+        "2025-07-03 00:00:00",
+        "2025-07-10 00:00:00",
+        "2025-07-17 00:00:00",
+        "2025-07-24 00:00:00",
+        "2025-07-31 00:00:00",
+        "2025-08-07 00:00:00",
+        "2025-08-14 00:00:00",
+        "2025-08-21 00:00:00",
+        "2025-08-28 00:00:00",
+        "2025-09-02 00:00:00",
+        "2025-09-09 00:00:00",
+        "2025-09-16 00:00:00",
+        "2025-09-23 00:00:00",
+        "2025-09-25 00:00:00",
+        "2025-09-30 00:00:00",
+        "2025-10-28 00:00:00",
+        "2025-12-24 00:00:00",
+        "2025-12-30 00:00:00",
+        "2026-03-26 00:00:00",
+        "2026-03-31 00:00:00",
+        "2026-06-25 00:00:00",
+        "2026-06-30 00:00:00",
+        "2026-12-29 00:00:00",
+        "2026-12-31 00:00:00",
+        "2027-06-24 00:00:00",
+        "2027-06-29 00:00:00",
+        "2027-12-28 00:00:00",
+        "2027-12-30 00:00:00",
+        "2028-12-26 00:00:00",
+        "2028-12-28 00:00:00",
+        "2029-12-27 00:00:00"
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_expiry_dates",
+      "input_params": {
+        "underlying": "SENSEX"
+      },
+      "execution_time": 4.228000761941075e-06,
+      "success": true,
+      "result": [
+        "2023-10-20 00:00:00",
+        "2023-10-27 00:00:00",
+        "2023-11-03 00:00:00",
+        "2023-11-10 00:00:00",
+        "2023-11-17 00:00:00",
+        "2023-11-24 00:00:00",
+        "2023-12-01 00:00:00",
+        "2023-12-08 00:00:00",
+        "2023-12-15 00:00:00",
+        "2023-12-22 00:00:00",
+        "2023-12-29 00:00:00",
+        "2024-01-05 00:00:00",
+        "2024-01-12 00:00:00",
+        "2024-01-19 00:00:00",
+        "2024-01-25 00:00:00",
+        "2024-02-02 00:00:00",
+        "2024-02-09 00:00:00",
+        "2024-02-16 00:00:00",
+        "2024-02-23 00:00:00",
+        "2024-03-01 00:00:00",
+        "2024-03-07 00:00:00",
+        "2024-03-15 00:00:00",
+        "2024-03-22 00:00:00",
+        "2024-03-28 00:00:00",
+        "2024-04-05 00:00:00",
+        "2024-04-12 00:00:00",
+        "2024-04-19 00:00:00",
+        "2024-04-26 00:00:00",
+        "2024-05-03 00:00:00",
+        "2024-05-10 00:00:00",
+        "2024-05-17 00:00:00",
+        "2024-05-24 00:00:00",
+        "2024-05-31 00:00:00",
+        "2024-06-07 00:00:00",
+        "2024-06-14 00:00:00",
+        "2024-06-21 00:00:00",
+        "2024-06-28 00:00:00",
+        "2024-07-05 00:00:00",
+        "2024-07-12 00:00:00",
+        "2024-07-19 00:00:00",
+        "2024-07-26 00:00:00",
+        "2024-08-02 00:00:00",
+        "2024-08-09 00:00:00",
+        "2024-08-16 00:00:00",
+        "2024-08-23 00:00:00",
+        "2024-08-30 00:00:00",
+        "2024-09-06 00:00:00",
+        "2024-09-13 00:00:00",
+        "2024-09-20 00:00:00",
+        "2024-09-27 00:00:00",
+        "2024-10-04 00:00:00",
+        "2024-10-11 00:00:00",
+        "2024-10-18 00:00:00",
+        "2024-10-25 00:00:00",
+        "2024-10-31 00:00:00",
+        "2024-11-01 00:00:00",
+        "2024-11-08 00:00:00",
+        "2024-11-14 00:00:00",
+        "2024-11-22 00:00:00",
+        "2024-11-29 00:00:00",
+        "2024-12-06 00:00:00",
+        "2024-12-13 00:00:00",
+        "2024-12-20 00:00:00",
+        "2024-12-27 00:00:00",
+        "2025-01-03 00:00:00",
+        "2025-01-07 00:00:00",
+        "2025-01-10 00:00:00",
+        "2025-01-14 00:00:00",
+        "2025-01-17 00:00:00",
+        "2025-01-21 00:00:00",
+        "2025-01-24 00:00:00",
+        "2025-01-28 00:00:00",
+        "2025-01-31 00:00:00",
+        "2025-02-04 00:00:00",
+        "2025-02-11 00:00:00",
+        "2025-02-18 00:00:00",
+        "2025-02-25 00:00:00",
+        "2025-03-04 00:00:00",
+        "2025-03-11 00:00:00",
+        "2025-03-18 00:00:00",
+        "2025-03-25 00:00:00",
+        "2025-03-28 00:00:00",
+        "2025-04-01 00:00:00",
+        "2025-04-08 00:00:00",
+        "2025-04-15 00:00:00",
+        "2025-04-22 00:00:00",
+        "2025-04-29 00:00:00",
+        "2025-05-06 00:00:00",
+        "2025-05-13 00:00:00",
+        "2025-05-20 00:00:00",
+        "2025-05-27 00:00:00",
+        "2025-06-03 00:00:00",
+        "2025-06-10 00:00:00",
+        "2025-06-17 00:00:00",
+        "2025-06-24 00:00:00",
+        "2025-06-27 00:00:00",
+        "2025-07-01 00:00:00",
+        "2025-07-08 00:00:00",
+        "2025-07-15 00:00:00",
+        "2025-07-22 00:00:00",
+        "2025-07-29 00:00:00",
+        "2025-08-05 00:00:00",
+        "2025-08-12 00:00:00",
+        "2025-08-19 00:00:00",
+        "2025-08-26 00:00:00",
+        "2025-09-04 00:00:00",
+        "2025-09-11 00:00:00",
+        "2025-09-18 00:00:00",
+        "2025-09-25 00:00:00",
+        "2025-09-30 00:00:00",
+        "2025-10-01 00:00:00",
+        "2025-10-30 00:00:00",
+        "2025-12-24 00:00:00",
+        "2025-12-26 00:00:00",
+        "2025-12-30 00:00:00",
+        "2026-03-26 00:00:00",
+        "2026-03-31 00:00:00",
+        "2026-06-25 00:00:00",
+        "2026-06-26 00:00:00",
+        "2026-06-30 00:00:00",
+        "2026-12-25 00:00:00",
+        "2026-12-29 00:00:00",
+        "2026-12-31 00:00:00",
+        "2027-06-24 00:00:00",
+        "2027-06-25 00:00:00",
+        "2027-06-29 00:00:00",
+        "2027-12-28 00:00:00",
+        "2027-12-30 00:00:00",
+        "2027-12-31 00:00:00",
+        "2028-06-27 00:00:00",
+        "2028-06-29 00:00:00",
+        "2028-06-30 00:00:00",
+        "2028-12-26 00:00:00",
+        "2028-12-28 00:00:00",
+        "2028-12-29 00:00:00",
+        "2029-06-26 00:00:00",
+        "2029-06-28 00:00:00",
+        "2029-12-25 00:00:00",
+        "2029-12-27 00:00:00",
+        "2030-06-27 00:00:00"
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_expiry_code",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0
+      },
+      "execution_time": 0.0008976739991339855,
+      "success": true,
+      "result": "240118",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_expiry_code",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 1
+      },
+      "execution_time": 0.0007945329998619854,
+      "success": true,
+      "result": "240125",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_expiry_code",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0
+      },
+      "execution_time": 0.0003132109995931387,
+      "success": true,
+      "result": "240119",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_expiry_code",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 1
+      },
+      "execution_time": 0.000291118001769064,
+      "success": true,
+      "result": "240125",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_expiry_code",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0
+      },
+      "execution_time": 0.0007574849987577181,
+      "success": true,
+      "result": "240321",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_expiry_code",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 1
+      },
+      "execution_time": 0.000754358999984106,
+      "success": true,
+      "result": "240328",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_expiry_code",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0
+      },
+      "execution_time": 0.0002880140018532984,
+      "success": true,
+      "result": "240322",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_expiry_code",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 1
+      },
+      "execution_time": 0.00029154100047890097,
+      "success": true,
+      "result": "240328",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_expiry_code",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0
+      },
+      "execution_time": 0.000751233001210494,
+      "success": true,
+      "result": "240613",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_expiry_code",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 1
+      },
+      "execution_time": 0.0007645380028407089,
+      "success": true,
+      "result": "240620",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_expiry_code",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0
+      },
+      "execution_time": 0.00028838400248787366,
+      "success": true,
+      "result": "240614",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_expiry_code",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 1
+      },
+      "execution_time": 0.0002943660001619719,
+      "success": true,
+      "result": "240621",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_monthly_expiry_code",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY"
+      },
+      "execution_time": 3.51350026903674e-05,
+      "success": true,
+      "result": "240125",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_monthly_expiry_code",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX"
+      },
+      "execution_time": 1.497799894423224e-05,
+      "success": true,
+      "result": "240125",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_monthly_expiry_code",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY"
+      },
+      "execution_time": 3.075700078625232e-05,
+      "success": true,
+      "result": "240328",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_monthly_expiry_code",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX"
+      },
+      "execution_time": 1.452699871151708e-05,
+      "success": true,
+      "result": "240328",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_monthly_expiry_code",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "underlying": "NIFTY"
+      },
+      "execution_time": 3.0726998375030234e-05,
+      "success": true,
+      "result": "240627",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_monthly_expiry_code",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "underlying": "SENSEX"
+      },
+      "execution_time": 3.032600216101855e-05,
+      "success": true,
+      "result": "240628",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_nearest_expiry",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY"
+      },
+      "execution_time": 5.642499672831036e-05,
+      "success": true,
+      "result": "2024-01-18",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_nearest_expiry",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX"
+      },
+      "execution_time": 2.05469987122342e-05,
+      "success": true,
+      "result": "2024-01-19",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_nearest_expiry",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY"
+      },
+      "execution_time": 4.245799937052652e-05,
+      "success": true,
+      "result": "2024-03-21",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_nearest_expiry",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX"
+      },
+      "execution_time": 2.0208000933052972e-05,
+      "success": true,
+      "result": "2024-03-22",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_nearest_expiry",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "underlying": "NIFTY"
+      },
+      "execution_time": 4.198699753032997e-05,
+      "success": true,
+      "result": "2024-06-13",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_nearest_expiry",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "underlying": "SENSEX"
+      },
+      "execution_time": 1.8853999790735543e-05,
+      "success": true,
+      "result": "2024-06-14",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "parse_date_from_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623750CE"
+      },
+      "execution_time": 0.000747916001273552,
+      "success": true,
+      "result": "2024-12-26",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "parse_date_from_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623750PE"
+      },
+      "execution_time": 2.9776001611026004e-05,
+      "success": true,
+      "result": "2024-12-26",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "parse_date_from_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623800CE"
+      },
+      "execution_time": 1.10910004877951e-05,
+      "success": true,
+      "result": "2024-12-26",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "parse_date_from_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623850PE"
+      },
+      "execution_time": 9.538001904729754e-06,
+      "success": true,
+      "result": "2024-12-26",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "parse_date_from_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092625900PE"
+      },
+      "execution_time": 8.926999726099893e-06,
+      "success": true,
+      "result": "2024-09-26",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "parse_date_from_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092626050CE"
+      },
+      "execution_time": 9.086001227842644e-06,
+      "success": true,
+      "result": "2024-09-26",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "parse_date_from_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092626100PE"
+      },
+      "execution_time": 8.847000572131947e-06,
+      "success": true,
+      "result": "2024-09-26",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "parse_date_from_symbol",
+      "input_params": {
+        "symbol": "SENSEX24121380900PE"
+      },
+      "execution_time": 8.76600097399205e-06,
+      "success": true,
+      "result": "2024-12-13",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "parse_date_from_symbol",
+      "input_params": {
+        "symbol": "SENSEX24121382400CE"
+      },
+      "execution_time": 8.816001354716718e-06,
+      "success": true,
+      "result": "2024-12-13",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "parse_date_from_symbol",
+      "input_params": {
+        "symbol": "SENSEX24092784900CE"
+      },
+      "execution_time": 8.685998182045296e-06,
+      "success": true,
+      "result": "2024-09-27",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "parse_date_from_symbol",
+      "input_params": {
+        "symbol": "SENSEX24092784200PE"
+      },
+      "execution_time": 8.594997780164704e-06,
+      "success": true,
+      "result": "2024-09-27",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "parse_strike_from_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623750CE"
+      },
+      "execution_time": 3.846998879453167e-06,
+      "success": true,
+      "result": 23750,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "parse_strike_from_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623750PE"
+      },
+      "execution_time": 1.9940016500186175e-06,
+      "success": true,
+      "result": 23750,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "parse_strike_from_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623800CE"
+      },
+      "execution_time": 1.8339997041039169e-06,
+      "success": true,
+      "result": 23800,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "parse_strike_from_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623850PE"
+      },
+      "execution_time": 1.763000909704715e-06,
+      "success": true,
+      "result": 23850,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "parse_strike_from_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092625900PE"
+      },
+      "execution_time": 1.65300298249349e-06,
+      "success": true,
+      "result": 25900,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "parse_strike_from_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092626050CE"
+      },
+      "execution_time": 2.9760012694168836e-06,
+      "success": true,
+      "result": 26050,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "parse_strike_from_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092626100PE"
+      },
+      "execution_time": 1.9930012058466673e-06,
+      "success": true,
+      "result": 26100,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "parse_strike_from_symbol",
+      "input_params": {
+        "symbol": "SENSEX24121380900PE"
+      },
+      "execution_time": 1.3354001566767693e-05,
+      "success": true,
+      "result": 80900,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "parse_strike_from_symbol",
+      "input_params": {
+        "symbol": "SENSEX24121382400CE"
+      },
+      "execution_time": 2.143999154213816e-06,
+      "success": true,
+      "result": 82400,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "parse_strike_from_symbol",
+      "input_params": {
+        "symbol": "SENSEX24092784900CE"
+      },
+      "execution_time": 1.6929989214986563e-06,
+      "success": true,
+      "result": 84900,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "parse_strike_from_symbol",
+      "input_params": {
+        "symbol": "SENSEX24092784200PE"
+      },
+      "execution_time": 1.7040001694113016e-06,
+      "success": true,
+      "result": 84200,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "otm_count": 0
+      },
+      "execution_time": 0.04063294799925643,
+      "success": true,
+      "result": "NIFTY24011822050CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "otm_count": 1
+      },
+      "execution_time": 0.0038062089988670778,
+      "success": true,
+      "result": "NIFTY24011822100CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "otm_count": 2
+      },
+      "execution_time": 0.003627938000136055,
+      "success": true,
+      "result": "NIFTY24011822150CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "otm_count": 0
+      },
+      "execution_time": 0.0035352259983483236,
+      "success": true,
+      "result": "NIFTY24011822050PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "otm_count": 1
+      },
+      "execution_time": 0.0034214750012324657,
+      "success": true,
+      "result": "NIFTY24011822000PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "otm_count": 2
+      },
+      "execution_time": 0.016615470001852373,
+      "success": true,
+      "result": "NIFTY24011821950PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 1,
+        "opt_type": "CE",
+        "otm_count": 0
+      },
+      "execution_time": 0.04137018500114209,
+      "success": true,
+      "result": "NIFTY24012522050CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 1,
+        "opt_type": "CE",
+        "otm_count": 1
+      },
+      "execution_time": 0.0186935439996887,
+      "success": true,
+      "result": "NIFTY24012522100CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 1,
+        "opt_type": "CE",
+        "otm_count": 2
+      },
+      "execution_time": 0.010690503997466294,
+      "success": true,
+      "result": "NIFTY24012522150CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 1,
+        "opt_type": "PE",
+        "otm_count": 0
+      },
+      "execution_time": 0.01072723200195469,
+      "success": true,
+      "result": "NIFTY24012522050PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 1,
+        "opt_type": "PE",
+        "otm_count": 1
+      },
+      "execution_time": 0.010119834998477018,
+      "success": true,
+      "result": "NIFTY24012522000PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 1,
+        "opt_type": "PE",
+        "otm_count": 2
+      },
+      "execution_time": 0.007472737001080532,
+      "success": true,
+      "result": "NIFTY24012521950PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "otm_count": 0
+      },
+      "execution_time": 0.05754258500019205,
+      "success": true,
+      "result": "SENSEX24011973200CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "otm_count": 1
+      },
+      "execution_time": 0.0071986299990385305,
+      "success": true,
+      "result": "SENSEX24011973300CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "otm_count": 2
+      },
+      "execution_time": 0.0070333429976017214,
+      "success": true,
+      "result": "SENSEX24011973400CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "otm_count": 0
+      },
+      "execution_time": 0.007147504999011289,
+      "success": true,
+      "result": "SENSEX24011973200PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "otm_count": 1
+      },
+      "execution_time": 0.006055138001102023,
+      "success": true,
+      "result": "SENSEX24011973100PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "otm_count": 2
+      },
+      "execution_time": 0.0061545940006908495,
+      "success": true,
+      "result": "SENSEX24011973000PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 1,
+        "opt_type": "CE",
+        "otm_count": 0
+      },
+      "execution_time": 0.05512855800043326,
+      "success": true,
+      "result": "SENSEX24012573200CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 1,
+        "opt_type": "CE",
+        "otm_count": 1
+      },
+      "execution_time": 0.017506543001218233,
+      "success": true,
+      "result": "SENSEX24012573300CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 1,
+        "opt_type": "CE",
+        "otm_count": 2
+      },
+      "execution_time": 0.016669311000441667,
+      "success": true,
+      "result": "SENSEX24012573400CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 1,
+        "opt_type": "PE",
+        "otm_count": 0
+      },
+      "execution_time": 0.015556747999653453,
+      "success": true,
+      "result": "SENSEX24012573200PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 1,
+        "opt_type": "PE",
+        "otm_count": 1
+      },
+      "execution_time": 0.015658686999813654,
+      "success": true,
+      "result": "SENSEX24012573100PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 1,
+        "opt_type": "PE",
+        "otm_count": 2
+      },
+      "execution_time": 0.015517094001552323,
+      "success": true,
+      "result": "SENSEX24012573000PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "otm_count": 0
+      },
+      "execution_time": 0.06251469400012866,
+      "success": true,
+      "result": "NIFTY24032121850CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "otm_count": 1
+      },
+      "execution_time": 0.02294648099996266,
+      "success": true,
+      "result": "NIFTY24032121900CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "otm_count": 2
+      },
+      "execution_time": 0.02526188499905402,
+      "success": true,
+      "result": "NIFTY24032121950CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "otm_count": 0
+      },
+      "execution_time": 0.02320930900168605,
+      "success": true,
+      "result": "NIFTY24032121850PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "otm_count": 1
+      },
+      "execution_time": 0.021400194000307238,
+      "success": true,
+      "result": "NIFTY24032121800PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "otm_count": 2
+      },
+      "execution_time": 0.02008570699763368,
+      "success": true,
+      "result": "NIFTY24032121750PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 1,
+        "opt_type": "CE",
+        "otm_count": 0
+      },
+      "execution_time": 0.03990850400077761,
+      "success": true,
+      "result": "NIFTY24032821850CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 1,
+        "opt_type": "CE",
+        "otm_count": 1
+      },
+      "execution_time": 0.006251192000490846,
+      "success": true,
+      "result": "NIFTY24032821900CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 1,
+        "opt_type": "CE",
+        "otm_count": 2
+      },
+      "execution_time": 0.006158760999824153,
+      "success": true,
+      "result": "NIFTY24032821950CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 1,
+        "opt_type": "PE",
+        "otm_count": 0
+      },
+      "execution_time": 0.00668837299963343,
+      "success": true,
+      "result": "NIFTY24032821850PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 1,
+        "opt_type": "PE",
+        "otm_count": 1
+      },
+      "execution_time": 0.006260829999519046,
+      "success": true,
+      "result": "NIFTY24032821800PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 1,
+        "opt_type": "PE",
+        "otm_count": 2
+      },
+      "execution_time": 0.006084561999159632,
+      "success": true,
+      "result": "NIFTY24032821750PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "otm_count": 0
+      },
+      "execution_time": 0.03933183600020129,
+      "success": true,
+      "result": "SENSEX24032272100CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "otm_count": 1
+      },
+      "execution_time": 0.005182049000723055,
+      "success": true,
+      "result": "SENSEX24032272200CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "otm_count": 2
+      },
+      "execution_time": 0.005243491999863181,
+      "success": true,
+      "result": "SENSEX24032272300CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "otm_count": 0
+      },
+      "execution_time": 0.00500222600021516,
+      "success": true,
+      "result": "SENSEX24032272100PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "otm_count": 1
+      },
+      "execution_time": 0.005504246000782587,
+      "success": true,
+      "result": "SENSEX24032272000PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "otm_count": 2
+      },
+      "execution_time": 0.005247301000053994,
+      "success": true,
+      "result": "SENSEX24032271900PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 1,
+        "opt_type": "CE",
+        "otm_count": 0
+      },
+      "execution_time": 0.060201426000276115,
+      "success": true,
+      "result": "SENSEX24032872100CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 1,
+        "opt_type": "CE",
+        "otm_count": 1
+      },
+      "execution_time": 0.012438936999387806,
+      "success": true,
+      "result": "SENSEX24032872200CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 1,
+        "opt_type": "CE",
+        "otm_count": 2
+      },
+      "execution_time": 0.011750390000088373,
+      "success": true,
+      "result": "SENSEX24032872300CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 1,
+        "opt_type": "PE",
+        "otm_count": 0
+      },
+      "execution_time": 0.011701177998475032,
+      "success": true,
+      "result": "SENSEX24032872100PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 1,
+        "opt_type": "PE",
+        "otm_count": 1
+      },
+      "execution_time": 0.010852716000954388,
+      "success": true,
+      "result": "SENSEX24032872000PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_moneyness",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 1,
+        "opt_type": "PE",
+        "otm_count": 2
+      },
+      "execution_time": 0.01129632800075342,
+      "success": true,
+      "result": "SENSEX24032871900PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_premium",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "seek_price": 10
+      },
+      "execution_time": 0.01019950300178607,
+      "success": true,
+      "result": "NIFTY24011822500CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_premium",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "seek_price": 25
+      },
+      "execution_time": 0.006697128999803681,
+      "success": true,
+      "result": "NIFTY24011822450CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_premium",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "seek_price": 50
+      },
+      "execution_time": 0.006437167001422495,
+      "success": true,
+      "result": "NIFTY24011822150CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_premium",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "seek_price": 10
+      },
+      "execution_time": 0.006453718000557274,
+      "success": true,
+      "result": "NIFTY24011821400PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_premium",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "seek_price": 25
+      },
+      "execution_time": 0.006518037000205368,
+      "success": true,
+      "result": "NIFTY24011821650PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_premium",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "seek_price": 50
+      },
+      "execution_time": 0.00750244200025918,
+      "success": true,
+      "result": "NIFTY24011821750PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_premium",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "seek_price": 10
+      },
+      "execution_time": 0.0056786599998304155,
+      "success": true,
+      "result": "SENSEX24011975400CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_premium",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "seek_price": 25
+      },
+      "execution_time": 0.005475073001434794,
+      "success": true,
+      "result": "SENSEX24011975400CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_premium",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "seek_price": 50
+      },
+      "execution_time": 0.005619340001430828,
+      "success": true,
+      "result": "SENSEX24011975400CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_premium",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "seek_price": 10
+      },
+      "execution_time": 0.005536576998565579,
+      "success": true,
+      "result": "SENSEX24011969500PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_premium",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "seek_price": 25
+      },
+      "execution_time": 0.005873451998922974,
+      "success": true,
+      "result": "SENSEX24011969900PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_premium",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "seek_price": 50
+      },
+      "execution_time": 0.00547133500003838,
+      "success": true,
+      "result": "SENSEX24011970800PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_premium",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "seek_price": 10
+      },
+      "execution_time": 0.010438948000228265,
+      "success": true,
+      "result": "NIFTY24032122250CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_premium",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "seek_price": 25
+      },
+      "execution_time": 0.009750802997587016,
+      "success": true,
+      "result": "NIFTY24032122000CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_premium",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "seek_price": 50
+      },
+      "execution_time": 0.009734421997563913,
+      "success": true,
+      "result": "NIFTY24032122000CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_premium",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "seek_price": 10
+      },
+      "execution_time": 0.009751714002049994,
+      "success": true,
+      "result": "NIFTY24032121600PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_premium",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "seek_price": 25
+      },
+      "execution_time": 0.00990773299781722,
+      "success": true,
+      "result": "NIFTY24032121650PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_premium",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "seek_price": 50
+      },
+      "execution_time": 0.009770708998985356,
+      "success": true,
+      "result": "NIFTY24032121650PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_premium",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "seek_price": 10
+      },
+      "execution_time": 0.005651368999679107,
+      "success": true,
+      "result": "SENSEX24032274100CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_premium",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "seek_price": 25
+      },
+      "execution_time": 0.005826955999509664,
+      "success": true,
+      "result": "SENSEX24032273600CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_premium",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "seek_price": 50
+      },
+      "execution_time": 0.005713165002816822,
+      "success": true,
+      "result": "SENSEX24032273200CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_premium",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "seek_price": 10
+      },
+      "execution_time": 0.009131523001997266,
+      "success": true,
+      "result": "SENSEX24032270000PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_premium",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "seek_price": 25
+      },
+      "execution_time": 0.00914661099886871,
+      "success": true,
+      "result": "SENSEX24032270600PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_premium",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "seek_price": 50
+      },
+      "execution_time": 0.008948653998231748,
+      "success": true,
+      "result": "SENSEX24032271000PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_delta",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "seek_delta": 0.1
+      },
+      "execution_time": 0.004573499998514308,
+      "success": true,
+      "result": [
+        "NIFTY24011822450CE",
+        0.10407412052154541
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_delta",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "seek_delta": 0.2
+      },
+      "execution_time": 0.004495286000747001,
+      "success": true,
+      "result": [
+        "NIFTY24011822450CE",
+        0.10407412052154541
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_delta",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "seek_delta": 0.3
+      },
+      "execution_time": 0.004278903998056194,
+      "success": true,
+      "result": [
+        "NIFTY24011822150CE",
+        0.408752977848053
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_delta",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "seek_delta": 0.1
+      },
+      "execution_time": 0.004145618000620743,
+      "success": true,
+      "result": [
+        "NIFTY24011819700PE",
+        -0.005308112595230341
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_delta",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "seek_delta": 0.2
+      },
+      "execution_time": 0.004225646996928845,
+      "success": true,
+      "result": [
+        "NIFTY24011819700PE",
+        -0.005308112595230341
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_delta",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "seek_delta": 0.3
+      },
+      "execution_time": 0.004251013000612147,
+      "success": true,
+      "result": [
+        "NIFTY24011819700PE",
+        -0.005308112595230341
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_delta",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "seek_delta": 0.1
+      },
+      "execution_time": 0.003624361001129728,
+      "success": true,
+      "result": [
+        "SENSEX24011975000CE",
+        0.09907574951648712
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_delta",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "seek_delta": 0.2
+      },
+      "execution_time": 0.0036421039985725656,
+      "success": true,
+      "result": [
+        "SENSEX24011974300CE",
+        0.20697540044784546
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_delta",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "seek_delta": 0.3
+      },
+      "execution_time": 0.0036007469971082173,
+      "success": true,
+      "result": [
+        "SENSEX24011973900CE",
+        0.3105899691581726
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_delta",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "seek_delta": 0.1
+      },
+      "execution_time": 0.0034360109966655727,
+      "success": true,
+      "result": [
+        "SENSEX24011969500PE",
+        -0.024159548804163933
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_delta",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "seek_delta": 0.2
+      },
+      "execution_time": 0.0033933129998331424,
+      "success": true,
+      "result": [
+        "SENSEX24011969500PE",
+        -0.024159548804163933
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_delta",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "seek_delta": 0.3
+      },
+      "execution_time": 0.0034480629983590916,
+      "success": true,
+      "result": [
+        "SENSEX24011969500PE",
+        -0.024159548804163933
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_delta",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "seek_delta": 0.1
+      },
+      "execution_time": 0.008854640000208747,
+      "success": true,
+      "result": [
+        "NIFTY24032122250CE",
+        0.02951442450284958
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_delta",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "seek_delta": 0.2
+      },
+      "execution_time": 0.00788865000140504,
+      "success": true,
+      "result": [
+        "NIFTY24032122000CE",
+        0.22502948343753815
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_delta",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "seek_delta": 0.3
+      },
+      "execution_time": 0.0074520390007819515,
+      "success": true,
+      "result": [
+        "NIFTY24032122000CE",
+        0.22502948343753815
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_delta",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "seek_delta": 0.1
+      },
+      "execution_time": 0.007568976001493866,
+      "success": true,
+      "result": [
+        "NIFTY24032120050PE",
+        -4.440892098500626e-16
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_delta",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "seek_delta": 0.2
+      },
+      "execution_time": 0.008398412999667926,
+      "success": true,
+      "result": [
+        "NIFTY24032120050PE",
+        -4.440892098500626e-16
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_delta",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "seek_delta": 0.3
+      },
+      "execution_time": 0.00913749400206143,
+      "success": true,
+      "result": [
+        "NIFTY24032120050PE",
+        -4.440892098500626e-16
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_delta",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "seek_delta": 0.1
+      },
+      "execution_time": 0.003544581999449292,
+      "success": true,
+      "result": [
+        "SENSEX24032273300CE",
+        0.10423658788204193
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_delta",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "seek_delta": 0.2
+      },
+      "execution_time": 0.003558508000423899,
+      "success": true,
+      "result": [
+        "SENSEX24032272900CE",
+        0.20738843083381653
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_delta",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "seek_delta": 0.3
+      },
+      "execution_time": 0.0035702710010809824,
+      "success": true,
+      "result": [
+        "SENSEX24032272600CE",
+        0.3176405429840088
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_delta",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "seek_delta": 0.1
+      },
+      "execution_time": 0.008805048000795068,
+      "success": true,
+      "result": [
+        "SENSEX24032268500PE",
+        -0.004692784510552883
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_delta",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "seek_delta": 0.2
+      },
+      "execution_time": 0.007106188000761904,
+      "success": true,
+      "result": [
+        "SENSEX24032268500PE",
+        -0.004692784510552883
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_delta",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "seek_delta": 0.3
+      },
+      "execution_time": 0.007060894000460394,
+      "success": true,
+      "result": [
+        "SENSEX24032268500PE",
+        -0.004692784510552883
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_itm_percent",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "itm_percent": 1
+      },
+      "execution_time": 0.0076522599993040785,
+      "success": true,
+      "result": [
+        "NIFTY24011821850CE",
+        0.7707293033599854
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_itm_percent",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "itm_percent": 2
+      },
+      "execution_time": 0.007010089997493196,
+      "success": true,
+      "result": [
+        "NIFTY24011821650CE",
+        0.9058334827423096
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_itm_percent",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "itm_percent": 5
+      },
+      "execution_time": 0.00694345599913504,
+      "success": true,
+      "result": [
+        "NIFTY24011821100CE",
+        1.0
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_itm_percent",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "itm_percent": 1
+      },
+      "execution_time": 0.006938025002455106,
+      "success": true,
+      "result": [
+        "NIFTY24011822100PE",
+        -0.5217351317405701
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_itm_percent",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "itm_percent": 2
+      },
+      "execution_time": 0.006918650000443449,
+      "success": true,
+      "result": [
+        "NIFTY24011822450PE",
+        -0.8799736499786377
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_itm_percent",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "itm_percent": 5
+      },
+      "execution_time": 0.006856284002424218,
+      "success": true,
+      "result": [
+        "NIFTY24011822550PE",
+        -0.9004731178283691
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_itm_percent",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "itm_percent": 1
+      },
+      "execution_time": 0.006062372001906624,
+      "success": true,
+      "result": [
+        "SENSEX24011972600CE",
+        0.7138033509254456
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_itm_percent",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "itm_percent": 2
+      },
+      "execution_time": 0.005976803000521613,
+      "success": true,
+      "result": [
+        "SENSEX24011972000CE",
+        0.8537178039550781
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_itm_percent",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "itm_percent": 5
+      },
+      "execution_time": 0.005872030000318773,
+      "success": true,
+      "result": [
+        "SENSEX24011972000CE",
+        0.8537178039550781
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_itm_percent",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "itm_percent": 1
+      },
+      "execution_time": 0.005998663997161202,
+      "success": true,
+      "result": [
+        "SENSEX24011973500PE",
+        -0.5601988434791565
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_itm_percent",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "itm_percent": 2
+      },
+      "execution_time": 0.00583135299893911,
+      "success": true,
+      "result": [
+        "SENSEX24011973500PE",
+        -0.5601988434791565
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_itm_percent",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "itm_percent": 5
+      },
+      "execution_time": 0.0058939789996657055,
+      "success": true,
+      "result": [
+        "SENSEX24011973500PE",
+        -0.5601988434791565
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_itm_percent",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "itm_percent": 1
+      },
+      "execution_time": 0.010227074999420438,
+      "success": true,
+      "result": [
+        "NIFTY24032121650CE",
+        0.825996994972229
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_itm_percent",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "itm_percent": 2
+      },
+      "execution_time": 0.010162885999307036,
+      "success": true,
+      "result": [
+        "NIFTY24032121450CE",
+        0.9586402177810669
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_itm_percent",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "itm_percent": 5
+      },
+      "execution_time": 0.010142147999431472,
+      "success": true,
+      "result": [
+        "NIFTY24032121000CE",
+        0.9680095911026001
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_itm_percent",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "itm_percent": 1
+      },
+      "execution_time": 0.010533213000599062,
+      "success": true,
+      "result": [
+        "NIFTY24032121950PE",
+        -0.6992517113685608
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_itm_percent",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "itm_percent": 2
+      },
+      "execution_time": 0.010109506998560391,
+      "success": true,
+      "result": [
+        "NIFTY24032122250PE",
+        NaN
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_itm_percent",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "NIFTY",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "itm_percent": 5
+      },
+      "execution_time": 0.01013954200243461,
+      "success": true,
+      "result": [
+        "NIFTY24032122900PE",
+        NaN
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_itm_percent",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "itm_percent": 1
+      },
+      "execution_time": 0.005981422000331804,
+      "success": true,
+      "result": [
+        "SENSEX24032271500CE",
+        0.736332893371582
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_itm_percent",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "itm_percent": 2
+      },
+      "execution_time": 0.006012288999045268,
+      "success": true,
+      "result": [
+        "SENSEX24032271500CE",
+        0.736332893371582
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_itm_percent",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "CE",
+        "itm_percent": 5
+      },
+      "execution_time": 0.006033136996848043,
+      "success": true,
+      "result": [
+        "SENSEX24032271500CE",
+        0.736332893371582
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_itm_percent",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "itm_percent": 1
+      },
+      "execution_time": 0.012154018000728684,
+      "success": true,
+      "result": [
+        "SENSEX24032272800PE",
+        -0.81791090965271
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_itm_percent",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "itm_percent": 2
+      },
+      "execution_time": 0.009108570997341303,
+      "success": true,
+      "result": [
+        "SENSEX24032273200PE",
+        NaN
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "find_symbol_by_itm_percent",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "underlying": "SENSEX",
+        "expiry_idx": 0,
+        "opt_type": "PE",
+        "itm_percent": 5
+      },
+      "execution_time": 0.00932151699817041,
+      "success": true,
+      "result": [
+        "SENSEX24032273200PE",
+        NaN
+      ],
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "symbol": "NIFTY24122623750CE"
+      },
+      "execution_time": 0.035494681000272976,
+      "success": true,
+      "result": {
+        "ts": "2024-10-25 12:09:00",
+        "o": 1042.6500244140625,
+        "h": 1042.6500244140625,
+        "l": 1042.6500244140625,
+        "c": 1042.6500244140625,
+        "iv": 0.16844652593135834,
+        "delta": 0.6678471565246582,
+        "theta": -7.590155124664307,
+        "gamma": 0.00021632446441799402,
+        "rho": 25.682416915893555,
+        "vega": 36.17924118041992,
+        "underlying_c": 1042.6500244140625,
+        "symbol": "NIFTY24DEC23750CE",
+        "strike": 23750.0,
+        "option_type": "call",
+        "v": 0.0,
+        "oi": 0.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "symbol": "NIFTY24122623750PE"
+      },
+      "execution_time": 0.03996313799871132,
+      "success": true,
+      "result": {
+        "ts": "2024-10-23 12:45:00",
+        "o": 203.5500030517578,
+        "h": 203.60000610351562,
+        "l": 203.5500030517578,
+        "c": 203.5500030517578,
+        "iv": 0.1477411538362503,
+        "delta": -0.22484202682971954,
+        "theta": -2.5356650352478027,
+        "gamma": 0.00019714568043127656,
+        "rho": -10.056893348693848,
+        "vega": 30.857065200805664,
+        "underlying_c": 203.5500030517578,
+        "symbol": "NIFTY24DEC23750PE",
+        "strike": 23750.0,
+        "option_type": "put",
+        "v": 0.0,
+        "oi": 0.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "symbol": "NIFTY24122623800CE"
+      },
+      "execution_time": 0.013900286001444329,
+      "success": true,
+      "result": {
+        "ts": "2024-10-25 14:29:00",
+        "o": 920.0,
+        "h": 930.0,
+        "l": 920.0,
+        "c": 930.0,
+        "iv": 0.15781879425048828,
+        "delta": 0.6502469778060913,
+        "theta": -7.300441741943359,
+        "gamma": 0.0002362844825256616,
+        "rho": 25.041170120239258,
+        "vega": 36.772430419921875,
+        "underlying_c": 930.0,
+        "symbol": "NIFTY24DEC23800CE",
+        "strike": 23800.0,
+        "option_type": "call",
+        "v": 0.0,
+        "oi": 125.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "symbol": "NIFTY24122623850PE"
+      },
+      "execution_time": 0.012050096000166377,
+      "success": true,
+      "result": {
+        "ts": "2024-10-25 12:06:00",
+        "o": 321.29998779296875,
+        "h": 321.29998779296875,
+        "l": 321.29998779296875,
+        "c": 321.29998779296875,
+        "iv": 0.1432809829711914,
+        "delta": -0.33085089921951294,
+        "theta": -2.6860077381134033,
+        "gamma": 0.0002537714899517596,
+        "rho": -14.15771484375,
+        "vega": 36.14410400390625,
+        "underlying_c": 321.29998779296875,
+        "symbol": "NIFTY24DEC23850PE",
+        "strike": 23850.0,
+        "option_type": "put",
+        "v": 0.0,
+        "oi": 0.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "symbol": "NIFTY24092625900PE"
+      },
+      "execution_time": 0.07037676599793485,
+      "success": true,
+      "result": {
+        "ts": "2024-07-15 10:23:00",
+        "o": 1220.0,
+        "h": 1220.0,
+        "l": 1220.0,
+        "c": 1220.0,
+        "iv": NaN,
+        "delta": NaN,
+        "theta": NaN,
+        "gamma": NaN,
+        "rho": NaN,
+        "vega": NaN,
+        "underlying_c": 1220.0,
+        "symbol": "NIFTY24SEP25900PE",
+        "strike": 25900.0,
+        "option_type": "put",
+        "v": 0.0,
+        "oi": 0.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "symbol": "NIFTY24092626050CE"
+      },
+      "execution_time": 0.04861235599673819,
+      "success": true,
+      "result": {
+        "ts": "2024-07-05 12:58:00",
+        "o": 172.39999389648438,
+        "h": 172.39999389648438,
+        "l": 119.94999694824219,
+        "c": 119.94999694824219,
+        "iv": 0.11823205649852753,
+        "delta": 0.1685202419757843,
+        "theta": -2.7805705070495605,
+        "gamma": 0.00018374006322119385,
+        "rho": 9.041326522827148,
+        "vega": 29.14813995361328,
+        "underlying_c": 119.94999694824219,
+        "symbol": "NIFTY24SEP26050CE",
+        "strike": 26050.0,
+        "option_type": "call",
+        "v": 25.0,
+        "oi": 50.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "symbol": "NIFTY24092626100PE"
+      },
+      "execution_time": 0.05490750999888405,
+      "success": true,
+      "result": {
+        "ts": "2024-07-19 14:37:00",
+        "o": 1400.0,
+        "h": 1400.0,
+        "l": 1400.0,
+        "c": 1400.0,
+        "iv": NaN,
+        "delta": NaN,
+        "theta": NaN,
+        "gamma": NaN,
+        "rho": NaN,
+        "vega": NaN,
+        "underlying_c": 1400.0,
+        "symbol": "NIFTY24SEP26100PE",
+        "strike": 26100.0,
+        "option_type": "put",
+        "v": 0.0,
+        "oi": 0.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "symbol": "SENSEX24121380900PE"
+      },
+      "execution_time": 0.04295311000169022,
+      "success": true,
+      "result": {
+        "ts": "2024-11-13 15:30:00",
+        "o": 0.0,
+        "h": 0.0,
+        "l": 0.0,
+        "c": 0.0,
+        "iv": NaN,
+        "delta": NaN,
+        "theta": NaN,
+        "gamma": NaN,
+        "rho": NaN,
+        "vega": NaN,
+        "underlying_c": 0.0,
+        "symbol": "SENSEX24DEC80900PE",
+        "strike": 80900.0,
+        "option_type": "put",
+        "v": 1.0,
+        "oi": 0.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "symbol": "SENSEX24121382400CE"
+      },
+      "execution_time": 0.007089135000569513,
+      "success": true,
+      "result": {
+        "ts": "2024-12-02 14:45:00",
+        "o": 161.0,
+        "h": 161.0,
+        "l": 161.0,
+        "c": 161.0,
+        "iv": 0.1357606202363968,
+        "delta": 0.16248054802417755,
+        "theta": -23.414459228515625,
+        "gamma": 0.00012963375775143504,
+        "rho": 3.895888328552246,
+        "vega": 34.320335388183594,
+        "underlying_c": 161.0,
+        "symbol": "SENSEX24DEC82400CE",
+        "strike": 82400.0,
+        "option_type": "call",
+        "v": 0.0,
+        "oi": 40.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "symbol": "SENSEX24092784900CE"
+      },
+      "execution_time": 0.04166551399976015,
+      "success": true,
+      "result": {
+        "ts": "2024-09-20 10:19:00",
+        "o": 102.55000305175781,
+        "h": 102.55000305175781,
+        "l": 102.55000305175781,
+        "c": 102.55000305175781,
+        "iv": 0.10091075301170349,
+        "delta": 0.16423845291137695,
+        "theta": -22.772212982177734,
+        "gamma": 0.00020860981021542102,
+        "rho": 2.6946725845336914,
+        "vega": 29.096656799316406,
+        "underlying_c": 102.55000305175781,
+        "symbol": "SENSEX24SEP84900CE",
+        "strike": 84900.0,
+        "option_type": "call",
+        "v": 0.0,
+        "oi": 0.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "symbol": "NIFTY24122623750CE"
+      },
+      "execution_time": 0.0258908519972465,
+      "success": true,
+      "result": {
+        "ts": "2024-10-25 12:09:00",
+        "o": 1042.6500244140625,
+        "h": 1042.6500244140625,
+        "l": 1042.6500244140625,
+        "c": 1042.6500244140625,
+        "iv": 0.16844652593135834,
+        "delta": 0.6678471565246582,
+        "theta": -7.590155124664307,
+        "gamma": 0.00021632446441799402,
+        "rho": 25.682416915893555,
+        "vega": 36.17924118041992,
+        "underlying_c": 1042.6500244140625,
+        "symbol": "NIFTY24DEC23750CE",
+        "strike": 23750.0,
+        "option_type": "call",
+        "v": 0.0,
+        "oi": 0.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "symbol": "NIFTY24122623750PE"
+      },
+      "execution_time": 0.020376565000333358,
+      "success": true,
+      "result": {
+        "ts": "2024-10-23 12:45:00",
+        "o": 203.5500030517578,
+        "h": 203.60000610351562,
+        "l": 203.5500030517578,
+        "c": 203.5500030517578,
+        "iv": 0.1477411538362503,
+        "delta": -0.22484202682971954,
+        "theta": -2.5356650352478027,
+        "gamma": 0.00019714568043127656,
+        "rho": -10.056893348693848,
+        "vega": 30.857065200805664,
+        "underlying_c": 203.5500030517578,
+        "symbol": "NIFTY24DEC23750PE",
+        "strike": 23750.0,
+        "option_type": "put",
+        "v": 0.0,
+        "oi": 0.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "symbol": "NIFTY24122623800CE"
+      },
+      "execution_time": 0.016289898001559777,
+      "success": true,
+      "result": {
+        "ts": "2024-10-25 14:29:00",
+        "o": 920.0,
+        "h": 930.0,
+        "l": 920.0,
+        "c": 930.0,
+        "iv": 0.15781879425048828,
+        "delta": 0.6502469778060913,
+        "theta": -7.300441741943359,
+        "gamma": 0.0002362844825256616,
+        "rho": 25.041170120239258,
+        "vega": 36.772430419921875,
+        "underlying_c": 930.0,
+        "symbol": "NIFTY24DEC23800CE",
+        "strike": 23800.0,
+        "option_type": "call",
+        "v": 0.0,
+        "oi": 125.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "symbol": "NIFTY24122623850PE"
+      },
+      "execution_time": 0.019831954999972368,
+      "success": true,
+      "result": {
+        "ts": "2024-10-25 12:06:00",
+        "o": 321.29998779296875,
+        "h": 321.29998779296875,
+        "l": 321.29998779296875,
+        "c": 321.29998779296875,
+        "iv": 0.1432809829711914,
+        "delta": -0.33085089921951294,
+        "theta": -2.6860077381134033,
+        "gamma": 0.0002537714899517596,
+        "rho": -14.15771484375,
+        "vega": 36.14410400390625,
+        "underlying_c": 321.29998779296875,
+        "symbol": "NIFTY24DEC23850PE",
+        "strike": 23850.0,
+        "option_type": "put",
+        "v": 0.0,
+        "oi": 0.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "symbol": "NIFTY24092625900PE"
+      },
+      "execution_time": 0.01480814000024111,
+      "success": true,
+      "result": {
+        "ts": "2024-07-15 10:23:00",
+        "o": 1220.0,
+        "h": 1220.0,
+        "l": 1220.0,
+        "c": 1220.0,
+        "iv": NaN,
+        "delta": NaN,
+        "theta": NaN,
+        "gamma": NaN,
+        "rho": NaN,
+        "vega": NaN,
+        "underlying_c": 1220.0,
+        "symbol": "NIFTY24SEP25900PE",
+        "strike": 25900.0,
+        "option_type": "put",
+        "v": 0.0,
+        "oi": 0.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "symbol": "NIFTY24092626050CE"
+      },
+      "execution_time": 0.017889765000290936,
+      "success": true,
+      "result": {
+        "ts": "2024-07-05 12:58:00",
+        "o": 172.39999389648438,
+        "h": 172.39999389648438,
+        "l": 119.94999694824219,
+        "c": 119.94999694824219,
+        "iv": 0.11823205649852753,
+        "delta": 0.1685202419757843,
+        "theta": -2.7805705070495605,
+        "gamma": 0.00018374006322119385,
+        "rho": 9.041326522827148,
+        "vega": 29.14813995361328,
+        "underlying_c": 119.94999694824219,
+        "symbol": "NIFTY24SEP26050CE",
+        "strike": 26050.0,
+        "option_type": "call",
+        "v": 25.0,
+        "oi": 50.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "symbol": "NIFTY24092626100PE"
+      },
+      "execution_time": 0.015814346003026003,
+      "success": true,
+      "result": {
+        "ts": "2024-07-19 14:37:00",
+        "o": 1400.0,
+        "h": 1400.0,
+        "l": 1400.0,
+        "c": 1400.0,
+        "iv": NaN,
+        "delta": NaN,
+        "theta": NaN,
+        "gamma": NaN,
+        "rho": NaN,
+        "vega": NaN,
+        "underlying_c": 1400.0,
+        "symbol": "NIFTY24SEP26100PE",
+        "strike": 26100.0,
+        "option_type": "put",
+        "v": 0.0,
+        "oi": 0.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "symbol": "SENSEX24121380900PE"
+      },
+      "execution_time": 0.011588519999349955,
+      "success": true,
+      "result": {
+        "ts": "2024-11-13 15:30:00",
+        "o": 0.0,
+        "h": 0.0,
+        "l": 0.0,
+        "c": 0.0,
+        "iv": NaN,
+        "delta": NaN,
+        "theta": NaN,
+        "gamma": NaN,
+        "rho": NaN,
+        "vega": NaN,
+        "underlying_c": 0.0,
+        "symbol": "SENSEX24DEC80900PE",
+        "strike": 80900.0,
+        "option_type": "put",
+        "v": 1.0,
+        "oi": 0.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "symbol": "SENSEX24121382400CE"
+      },
+      "execution_time": 0.0076913020020583645,
+      "success": true,
+      "result": {
+        "ts": "2024-12-02 14:45:00",
+        "o": 161.0,
+        "h": 161.0,
+        "l": 161.0,
+        "c": 161.0,
+        "iv": 0.1357606202363968,
+        "delta": 0.16248054802417755,
+        "theta": -23.414459228515625,
+        "gamma": 0.00012963375775143504,
+        "rho": 3.895888328552246,
+        "vega": 34.320335388183594,
+        "underlying_c": 161.0,
+        "symbol": "SENSEX24DEC82400CE",
+        "strike": 82400.0,
+        "option_type": "call",
+        "v": 0.0,
+        "oi": 40.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "symbol": "SENSEX24092784900CE"
+      },
+      "execution_time": 0.010979219998262124,
+      "success": true,
+      "result": {
+        "ts": "2024-09-20 10:19:00",
+        "o": 102.55000305175781,
+        "h": 102.55000305175781,
+        "l": 102.55000305175781,
+        "c": 102.55000305175781,
+        "iv": 0.10091075301170349,
+        "delta": 0.16423845291137695,
+        "theta": -22.772212982177734,
+        "gamma": 0.00020860981021542102,
+        "rho": 2.6946725845336914,
+        "vega": 29.096656799316406,
+        "underlying_c": 102.55000305175781,
+        "symbol": "SENSEX24SEP84900CE",
+        "strike": 84900.0,
+        "option_type": "call",
+        "v": 0.0,
+        "oi": 0.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "symbol": "NIFTY24122623750CE"
+      },
+      "execution_time": 0.013642116999108111,
+      "success": true,
+      "result": {
+        "ts": "2024-10-25 12:09:00",
+        "o": 1042.6500244140625,
+        "h": 1042.6500244140625,
+        "l": 1042.6500244140625,
+        "c": 1042.6500244140625,
+        "iv": 0.16844652593135834,
+        "delta": 0.6678471565246582,
+        "theta": -7.590155124664307,
+        "gamma": 0.00021632446441799402,
+        "rho": 25.682416915893555,
+        "vega": 36.17924118041992,
+        "underlying_c": 1042.6500244140625,
+        "symbol": "NIFTY24DEC23750CE",
+        "strike": 23750.0,
+        "option_type": "call",
+        "v": 0.0,
+        "oi": 0.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "symbol": "NIFTY24122623750PE"
+      },
+      "execution_time": 0.011559786002180772,
+      "success": true,
+      "result": {
+        "ts": "2024-10-23 12:45:00",
+        "o": 203.5500030517578,
+        "h": 203.60000610351562,
+        "l": 203.5500030517578,
+        "c": 203.5500030517578,
+        "iv": 0.1477411538362503,
+        "delta": -0.22484202682971954,
+        "theta": -2.5356650352478027,
+        "gamma": 0.00019714568043127656,
+        "rho": -10.056893348693848,
+        "vega": 30.857065200805664,
+        "underlying_c": 203.5500030517578,
+        "symbol": "NIFTY24DEC23750PE",
+        "strike": 23750.0,
+        "option_type": "put",
+        "v": 0.0,
+        "oi": 0.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "symbol": "NIFTY24122623800CE"
+      },
+      "execution_time": 0.01014505300190649,
+      "success": true,
+      "result": {
+        "ts": "2024-10-25 14:29:00",
+        "o": 920.0,
+        "h": 930.0,
+        "l": 920.0,
+        "c": 930.0,
+        "iv": 0.15781879425048828,
+        "delta": 0.6502469778060913,
+        "theta": -7.300441741943359,
+        "gamma": 0.0002362844825256616,
+        "rho": 25.041170120239258,
+        "vega": 36.772430419921875,
+        "underlying_c": 930.0,
+        "symbol": "NIFTY24DEC23800CE",
+        "strike": 23800.0,
+        "option_type": "call",
+        "v": 0.0,
+        "oi": 125.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "symbol": "NIFTY24122623850PE"
+      },
+      "execution_time": 0.009974356002203422,
+      "success": true,
+      "result": {
+        "ts": "2024-10-25 12:06:00",
+        "o": 321.29998779296875,
+        "h": 321.29998779296875,
+        "l": 321.29998779296875,
+        "c": 321.29998779296875,
+        "iv": 0.1432809829711914,
+        "delta": -0.33085089921951294,
+        "theta": -2.6860077381134033,
+        "gamma": 0.0002537714899517596,
+        "rho": -14.15771484375,
+        "vega": 36.14410400390625,
+        "underlying_c": 321.29998779296875,
+        "symbol": "NIFTY24DEC23850PE",
+        "strike": 23850.0,
+        "option_type": "put",
+        "v": 0.0,
+        "oi": 0.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "symbol": "NIFTY24092625900PE"
+      },
+      "execution_time": 0.019961996000347426,
+      "success": true,
+      "result": {
+        "ts": "2024-07-15 10:23:00",
+        "o": 1220.0,
+        "h": 1220.0,
+        "l": 1220.0,
+        "c": 1220.0,
+        "iv": NaN,
+        "delta": NaN,
+        "theta": NaN,
+        "gamma": NaN,
+        "rho": NaN,
+        "vega": NaN,
+        "underlying_c": 1220.0,
+        "symbol": "NIFTY24SEP25900PE",
+        "strike": 25900.0,
+        "option_type": "put",
+        "v": 0.0,
+        "oi": 0.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "symbol": "NIFTY24092626050CE"
+      },
+      "execution_time": 0.013377997998759383,
+      "success": true,
+      "result": {
+        "ts": "2024-07-05 12:58:00",
+        "o": 172.39999389648438,
+        "h": 172.39999389648438,
+        "l": 119.94999694824219,
+        "c": 119.94999694824219,
+        "iv": 0.11823205649852753,
+        "delta": 0.1685202419757843,
+        "theta": -2.7805705070495605,
+        "gamma": 0.00018374006322119385,
+        "rho": 9.041326522827148,
+        "vega": 29.14813995361328,
+        "underlying_c": 119.94999694824219,
+        "symbol": "NIFTY24SEP26050CE",
+        "strike": 26050.0,
+        "option_type": "call",
+        "v": 25.0,
+        "oi": 50.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "symbol": "NIFTY24092626100PE"
+      },
+      "execution_time": 0.023126054999011103,
+      "success": true,
+      "result": {
+        "ts": "2024-07-19 14:37:00",
+        "o": 1400.0,
+        "h": 1400.0,
+        "l": 1400.0,
+        "c": 1400.0,
+        "iv": NaN,
+        "delta": NaN,
+        "theta": NaN,
+        "gamma": NaN,
+        "rho": NaN,
+        "vega": NaN,
+        "underlying_c": 1400.0,
+        "symbol": "NIFTY24SEP26100PE",
+        "strike": 26100.0,
+        "option_type": "put",
+        "v": 0.0,
+        "oi": 0.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "symbol": "SENSEX24121380900PE"
+      },
+      "execution_time": 0.010645419999491423,
+      "success": true,
+      "result": {
+        "ts": "2024-11-13 15:30:00",
+        "o": 0.0,
+        "h": 0.0,
+        "l": 0.0,
+        "c": 0.0,
+        "iv": NaN,
+        "delta": NaN,
+        "theta": NaN,
+        "gamma": NaN,
+        "rho": NaN,
+        "vega": NaN,
+        "underlying_c": 0.0,
+        "symbol": "SENSEX24DEC80900PE",
+        "strike": 80900.0,
+        "option_type": "put",
+        "v": 1.0,
+        "oi": 0.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "symbol": "SENSEX24121382400CE"
+      },
+      "execution_time": 0.007257848999870475,
+      "success": true,
+      "result": {
+        "ts": "2024-12-02 14:45:00",
+        "o": 161.0,
+        "h": 161.0,
+        "l": 161.0,
+        "c": 161.0,
+        "iv": 0.1357606202363968,
+        "delta": 0.16248054802417755,
+        "theta": -23.414459228515625,
+        "gamma": 0.00012963375775143504,
+        "rho": 3.895888328552246,
+        "vega": 34.320335388183594,
+        "underlying_c": 161.0,
+        "symbol": "SENSEX24DEC82400CE",
+        "strike": 82400.0,
+        "option_type": "call",
+        "v": 0.0,
+        "oi": 40.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_tick",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "symbol": "SENSEX24092784900CE"
+      },
+      "execution_time": 0.0077337109978543594,
+      "success": true,
+      "result": {
+        "ts": "2024-09-20 10:19:00",
+        "o": 102.55000305175781,
+        "h": 102.55000305175781,
+        "l": 102.55000305175781,
+        "c": 102.55000305175781,
+        "iv": 0.10091075301170349,
+        "delta": 0.16423845291137695,
+        "theta": -22.772212982177734,
+        "gamma": 0.00020860981021542102,
+        "rho": 2.6946725845336914,
+        "vega": 29.096656799316406,
+        "underlying_c": 102.55000305175781,
+        "symbol": "SENSEX24SEP84900CE",
+        "strike": 84900.0,
+        "option_type": "call",
+        "v": 0.0,
+        "oi": 0.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_last_available_tick",
+      "input_params": {
+        "symbol": "NIFTY24122623750CE"
+      },
+      "execution_time": 0.02151712100021541,
+      "success": true,
+      "result": {
+        "ts": "2024-12-26 15:30:00",
+        "o": 0.20000000298023224,
+        "h": 0.20000000298023224,
+        "l": 0.20000000298023224,
+        "c": 0.20000000298023224,
+        "iv": NaN,
+        "delta": NaN,
+        "theta": NaN,
+        "gamma": NaN,
+        "rho": NaN,
+        "vega": NaN,
+        "underlying_c": 0.20000000298023224,
+        "symbol": "NIFTY24DEC23750CE",
+        "strike": 23750.0,
+        "option_type": "call",
+        "v": 103125.0,
+        "oi": 23661976.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_last_available_tick",
+      "input_params": {
+        "symbol": "NIFTY24122623750PE"
+      },
+      "execution_time": 0.011863018000440206,
+      "success": true,
+      "result": {
+        "ts": "2024-12-26 15:30:00",
+        "o": 0.05000000074505806,
+        "h": 0.05000000074505806,
+        "l": 0.05000000074505806,
+        "c": 0.05000000074505806,
+        "iv": NaN,
+        "delta": NaN,
+        "theta": NaN,
+        "gamma": NaN,
+        "rho": NaN,
+        "vega": NaN,
+        "underlying_c": 0.05000000074505806,
+        "symbol": "NIFTY24DEC23750PE",
+        "strike": 23750.0,
+        "option_type": "put",
+        "v": 2025.0,
+        "oi": 14606175.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_last_available_tick",
+      "input_params": {
+        "symbol": "NIFTY24122623800CE"
+      },
+      "execution_time": 0.011026817999663763,
+      "success": true,
+      "result": {
+        "ts": "2024-12-26 15:30:00",
+        "o": 0.05000000074505806,
+        "h": 0.05000000074505806,
+        "l": 0.05000000074505806,
+        "c": 0.05000000074505806,
+        "iv": NaN,
+        "delta": NaN,
+        "theta": NaN,
+        "gamma": NaN,
+        "rho": NaN,
+        "vega": NaN,
+        "underlying_c": 0.05000000074505806,
+        "symbol": "NIFTY24DEC23800CE",
+        "strike": 23800.0,
+        "option_type": "call",
+        "v": 300.0,
+        "oi": 16641500.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_last_available_tick",
+      "input_params": {
+        "symbol": "NIFTY24122623850PE"
+      },
+      "execution_time": 0.009101497002120595,
+      "success": true,
+      "result": {
+        "ts": "2024-12-26 15:29:00",
+        "o": 99.69999694824219,
+        "h": 99.80000305175781,
+        "l": 99.44999694824219,
+        "c": 99.69999694824219,
+        "iv": 0.20000000298023224,
+        "delta": -1.0,
+        "theta": 4.247259616851807,
+        "gamma": 1.883345136052554e-42,
+        "rho": -0.0004537670756690204,
+        "vega": 4.045548666505747e-42,
+        "underlying_c": 99.69999694824219,
+        "symbol": "NIFTY24DEC23850PE",
+        "strike": 23850.0,
+        "option_type": "put",
+        "v": 78625.0,
+        "oi": 1486950.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_last_available_tick",
+      "input_params": {
+        "symbol": "NIFTY24092625900PE"
+      },
+      "execution_time": 0.02206192100129556,
+      "success": true,
+      "result": {
+        "ts": "2024-09-26 15:29:00",
+        "o": 0.15000000596046448,
+        "h": 0.30000001192092896,
+        "l": 0.10000000149011612,
+        "c": 0.20000000298023224,
+        "iv": 0.20000000298023224,
+        "delta": 0.0,
+        "theta": 0.0,
+        "gamma": 0.0,
+        "rho": -0.0,
+        "vega": 0.0,
+        "underlying_c": 0.20000000298023224,
+        "symbol": "NIFTY24SEP25900PE",
+        "strike": 25900.0,
+        "option_type": "put",
+        "v": 1018725.0,
+        "oi": 8337350.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_last_available_tick",
+      "input_params": {
+        "symbol": "NIFTY24092626050CE"
+      },
+      "execution_time": 0.009215770001901546,
+      "success": true,
+      "result": {
+        "ts": "2024-09-26 15:29:00",
+        "o": 166.10000610351562,
+        "h": 167.10000610351562,
+        "l": 166.0,
+        "c": 166.89999389648438,
+        "iv": 0.20000000298023224,
+        "delta": 1.0,
+        "theta": -4.639040470123291,
+        "gamma": 0.0,
+        "rho": 0.0004956239718012512,
+        "vega": 0.0,
+        "underlying_c": 166.89999389648438,
+        "symbol": "NIFTY24SEP26050CE",
+        "strike": 26050.0,
+        "option_type": "call",
+        "v": 86450.0,
+        "oi": 4729975.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_last_available_tick",
+      "input_params": {
+        "symbol": "NIFTY24092626100PE"
+      },
+      "execution_time": 0.007253439998748945,
+      "success": true,
+      "result": {
+        "ts": "2024-09-26 15:29:00",
+        "o": 0.15000000596046448,
+        "h": 0.25,
+        "l": 0.10000000149011612,
+        "c": 0.20000000298023224,
+        "iv": 0.20000000298023224,
+        "delta": 0.0,
+        "theta": -2.4952535174685633e-27,
+        "gamma": 6.642276590620838e-32,
+        "rho": -2.0219402535019768e-35,
+        "vega": 1.732946450725169e-31,
+        "underlying_c": 0.20000000298023224,
+        "symbol": "NIFTY24SEP26100PE",
+        "strike": 26100.0,
+        "option_type": "put",
+        "v": 989600.0,
+        "oi": 7580325.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_last_available_tick",
+      "input_params": {
+        "symbol": "SENSEX24121380900PE"
+      },
+      "execution_time": 0.018017402002442395,
+      "success": true,
+      "result": {
+        "ts": "2024-12-13 15:28:00",
+        "o": 0.05000000074505806,
+        "h": 0.10000000149011612,
+        "l": 0.05000000074505806,
+        "c": 0.05000000074505806,
+        "iv": 0.20000000298023224,
+        "delta": 0.0,
+        "theta": 0.0,
+        "gamma": 0.0,
+        "rho": -0.0,
+        "vega": 0.0,
+        "underlying_c": 0.05000000074505806,
+        "symbol": "SENSEX24DEC80900PE",
+        "strike": 80900.0,
+        "option_type": "put",
+        "v": 110640.0,
+        "oi": 466420.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_last_available_tick",
+      "input_params": {
+        "symbol": "SENSEX24121382400CE"
+      },
+      "execution_time": 0.006303709000349045,
+      "success": true,
+      "result": {
+        "ts": "2024-12-13 15:29:00",
+        "o": 0.05000000074505806,
+        "h": 0.10000000149011612,
+        "l": 0.05000000074505806,
+        "c": 0.05000000074505806,
+        "iv": 0.20000000298023224,
+        "delta": 3.354945360523083e-24,
+        "theta": -5.573794740481246e-19,
+        "gamma": 1.506387978403669e-24,
+        "rho": 5.244907358337114e-27,
+        "vega": 3.8703497628736754e-23,
+        "underlying_c": 0.05000000074505806,
+        "symbol": "SENSEX24DEC82400CE",
+        "strike": 82400.0,
+        "option_type": "call",
+        "v": 56650.0,
+        "oi": 624360.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_last_available_tick",
+      "input_params": {
+        "symbol": "SENSEX24092784900CE"
+      },
+      "execution_time": 0.02113244799693348,
+      "success": true,
+      "result": {
+        "ts": "2024-09-27 15:29:00",
+        "o": 671.5999755859375,
+        "h": 671.75,
+        "l": 669.2000122070312,
+        "c": 669.2000122070312,
+        "iv": NaN,
+        "delta": NaN,
+        "theta": NaN,
+        "gamma": NaN,
+        "rho": NaN,
+        "vega": NaN,
+        "underlying_c": 669.2000122070312,
+        "symbol": "SENSEX24SEP84900CE",
+        "strike": 84900.0,
+        "option_type": "call",
+        "v": 290.0,
+        "oi": 10090.0
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_all_ticks_by_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623750CE"
+      },
+      "execution_time": 0.06285371400008444,
+      "success": true,
+      "result": {
+        "rows": 6061,
+        "columns": 17,
+        "memory_usage": "1206267"
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_all_ticks_by_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623750PE"
+      },
+      "execution_time": 0.07349801400050637,
+      "success": true,
+      "result": {
+        "rows": 7236,
+        "columns": 17,
+        "memory_usage": "1432856"
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_all_ticks_by_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623800CE"
+      },
+      "execution_time": 0.09054356300111976,
+      "success": true,
+      "result": {
+        "rows": 7707,
+        "columns": 17,
+        "memory_usage": "1533821"
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_all_ticks_by_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623850PE"
+      },
+      "execution_time": 0.055968467000639066,
+      "success": true,
+      "result": {
+        "rows": 7197,
+        "columns": 17,
+        "memory_usage": "1425134"
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_all_ticks_by_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092625900PE"
+      },
+      "execution_time": 0.11413726399769075,
+      "success": true,
+      "result": {
+        "rows": 7356,
+        "columns": 17,
+        "memory_usage": "1456616"
+      },
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "symbol": "NIFTY24122623750CE"
+      },
+      "execution_time": 0.0012846019999415148,
+      "success": true,
+      "result": 232,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "symbol": "NIFTY24122623750PE"
+      },
+      "execution_time": 0.0012253220011189114,
+      "success": true,
+      "result": 232,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "symbol": "NIFTY24122623800CE"
+      },
+      "execution_time": 0.001223439998284448,
+      "success": true,
+      "result": 232,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "symbol": "NIFTY24122623850PE"
+      },
+      "execution_time": 0.0012120080027671065,
+      "success": true,
+      "result": 232,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "symbol": "NIFTY24092625900PE"
+      },
+      "execution_time": 0.0008934859979490284,
+      "success": true,
+      "result": 171,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "symbol": "NIFTY24092626050CE"
+      },
+      "execution_time": 0.0008910420001484454,
+      "success": true,
+      "result": 171,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "symbol": "NIFTY24092626100PE"
+      },
+      "execution_time": 0.0009038659991347231,
+      "success": true,
+      "result": 171,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "symbol": "SENSEX24121380900PE"
+      },
+      "execution_time": 0.0011631380002654623,
+      "success": true,
+      "result": 224,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "symbol": "SENSEX24121382400CE"
+      },
+      "execution_time": 0.0011621359990385827,
+      "success": true,
+      "result": 224,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-01-15T09:30:00",
+        "symbol": "SENSEX24092784900CE"
+      },
+      "execution_time": 0.0008933570024964865,
+      "success": true,
+      "result": 172,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "symbol": "NIFTY24122623750CE"
+      },
+      "execution_time": 0.0009905269980663434,
+      "success": true,
+      "result": 188,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "symbol": "NIFTY24122623750PE"
+      },
+      "execution_time": 0.00098527699810802,
+      "success": true,
+      "result": 188,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "symbol": "NIFTY24122623800CE"
+      },
+      "execution_time": 0.000981159999355441,
+      "success": true,
+      "result": 188,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "symbol": "NIFTY24122623850PE"
+      },
+      "execution_time": 0.0009827120011323132,
+      "success": true,
+      "result": 188,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "symbol": "NIFTY24092625900PE"
+      },
+      "execution_time": 0.0006807429999753367,
+      "success": true,
+      "result": 127,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "symbol": "NIFTY24092626050CE"
+      },
+      "execution_time": 0.0006642509979428723,
+      "success": true,
+      "result": 127,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "symbol": "NIFTY24092626100PE"
+      },
+      "execution_time": 0.0006676080010947771,
+      "success": true,
+      "result": 127,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "symbol": "SENSEX24121380900PE"
+      },
+      "execution_time": 0.0009352249981020577,
+      "success": true,
+      "result": 180,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "symbol": "SENSEX24121382400CE"
+      },
+      "execution_time": 0.0009359850009786896,
+      "success": true,
+      "result": 180,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-03-20T14:15:00",
+        "symbol": "SENSEX24092784900CE"
+      },
+      "execution_time": 0.0006846899996162392,
+      "success": true,
+      "result": 128,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "symbol": "NIFTY24122623750CE"
+      },
+      "execution_time": 0.0006993279966991395,
+      "success": true,
+      "result": 136,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "symbol": "NIFTY24122623750PE"
+      },
+      "execution_time": 0.000718750998203177,
+      "success": true,
+      "result": 136,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "symbol": "NIFTY24122623800CE"
+      },
+      "execution_time": 0.0007076620022417046,
+      "success": true,
+      "result": 136,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "symbol": "NIFTY24122623850PE"
+      },
+      "execution_time": 0.0006960499995329883,
+      "success": true,
+      "result": 136,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "symbol": "NIFTY24092625900PE"
+      },
+      "execution_time": 0.00039395099884131923,
+      "success": true,
+      "result": 75,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "symbol": "NIFTY24092626050CE"
+      },
+      "execution_time": 0.0003872580018651206,
+      "success": true,
+      "result": 75,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "symbol": "NIFTY24092626100PE"
+      },
+      "execution_time": 0.0004061430008732714,
+      "success": true,
+      "result": 75,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "symbol": "SENSEX24121380900PE"
+      },
+      "execution_time": 0.000659223002003273,
+      "success": true,
+      "result": 128,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "symbol": "SENSEX24121382400CE"
+      },
+      "execution_time": 0.0006622780019824859,
+      "success": true,
+      "result": 128,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_dte",
+      "input_params": {
+        "timestamp": "2024-06-10T11:45:00",
+        "symbol": "SENSEX24092784900CE"
+      },
+      "execution_time": 0.00039283899968722835,
+      "success": true,
+      "result": 76,
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623750CE",
+        "strike": 45000
+      },
+      "execution_time": 9.807998139876872e-06,
+      "success": true,
+      "result": "NIFTY24122645000CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623750CE",
+        "strike": 50000
+      },
+      "execution_time": 4.268000338925049e-06,
+      "success": true,
+      "result": "NIFTY24122650000CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623750CE",
+        "strike": 55000
+      },
+      "execution_time": 3.5759985621552914e-06,
+      "success": true,
+      "result": "NIFTY24122655000CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623750PE",
+        "strike": 45000
+      },
+      "execution_time": 3.5660013963934034e-06,
+      "success": true,
+      "result": "NIFTY24122645000PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623750PE",
+        "strike": 50000
+      },
+      "execution_time": 3.326997102703899e-06,
+      "success": true,
+      "result": "NIFTY24122650000PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623750PE",
+        "strike": 55000
+      },
+      "execution_time": 3.306002327008173e-06,
+      "success": true,
+      "result": "NIFTY24122655000PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623800CE",
+        "strike": 45000
+      },
+      "execution_time": 3.426001057960093e-06,
+      "success": true,
+      "result": "NIFTY24122645000CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623800CE",
+        "strike": 50000
+      },
+      "execution_time": 3.3559990697540343e-06,
+      "success": true,
+      "result": "NIFTY24122650000CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623800CE",
+        "strike": 55000
+      },
+      "execution_time": 3.216002369299531e-06,
+      "success": true,
+      "result": "NIFTY24122655000CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623850PE",
+        "strike": 45000
+      },
+      "execution_time": 3.3760006772354245e-06,
+      "success": true,
+      "result": "NIFTY24122645000PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623850PE",
+        "strike": 50000
+      },
+      "execution_time": 3.396999090909958e-06,
+      "success": true,
+      "result": "NIFTY24122650000PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623850PE",
+        "strike": 55000
+      },
+      "execution_time": 3.315999492770061e-06,
+      "success": true,
+      "result": "NIFTY24122655000PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092625900PE",
+        "strike": 45000
+      },
+      "execution_time": 3.315999492770061e-06,
+      "success": true,
+      "result": "NIFTY24092645000PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092625900PE",
+        "strike": 50000
+      },
+      "execution_time": 3.2659991120453924e-06,
+      "success": true,
+      "result": "NIFTY24092650000PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092625900PE",
+        "strike": 55000
+      },
+      "execution_time": 3.2659991120453924e-06,
+      "success": true,
+      "result": "NIFTY24092655000PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092626050CE",
+        "strike": 45000
+      },
+      "execution_time": 3.4570002753753215e-06,
+      "success": true,
+      "result": "NIFTY24092645000CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092626050CE",
+        "strike": 50000
+      },
+      "execution_time": 3.2850002753548324e-06,
+      "success": true,
+      "result": "NIFTY24092650000CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092626050CE",
+        "strike": 55000
+      },
+      "execution_time": 3.4059994504787028e-06,
+      "success": true,
+      "result": "NIFTY24092655000CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092626100PE",
+        "strike": 45000
+      },
+      "execution_time": 3.867997293127701e-06,
+      "success": true,
+      "result": "NIFTY24092645000PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092626100PE",
+        "strike": 50000
+      },
+      "execution_time": 3.426001057960093e-06,
+      "success": true,
+      "result": "NIFTY24092650000PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092626100PE",
+        "strike": 55000
+      },
+      "execution_time": 3.397002728888765e-06,
+      "success": true,
+      "result": "NIFTY24092655000PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "SENSEX24121380900PE",
+        "strike": 45000
+      },
+      "execution_time": 3.97700205212459e-06,
+      "success": true,
+      "result": "SENSEX24121345000PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "SENSEX24121380900PE",
+        "strike": 50000
+      },
+      "execution_time": 3.607001417549327e-06,
+      "success": true,
+      "result": "SENSEX24121350000PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "SENSEX24121380900PE",
+        "strike": 55000
+      },
+      "execution_time": 3.5869998100679368e-06,
+      "success": true,
+      "result": "SENSEX24121355000PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "SENSEX24121382400CE",
+        "strike": 45000
+      },
+      "execution_time": 3.716002538567409e-06,
+      "success": true,
+      "result": "SENSEX24121345000CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "SENSEX24121382400CE",
+        "strike": 50000
+      },
+      "execution_time": 3.597000613808632e-06,
+      "success": true,
+      "result": "SENSEX24121350000CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "SENSEX24121382400CE",
+        "strike": 55000
+      },
+      "execution_time": 3.417000698391348e-06,
+      "success": true,
+      "result": "SENSEX24121355000CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "SENSEX24092784900CE",
+        "strike": 45000
+      },
+      "execution_time": 3.827000909950584e-06,
+      "success": true,
+      "result": "SENSEX24092745000CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "SENSEX24092784900CE",
+        "strike": 50000
+      },
+      "execution_time": 3.3559990697540343e-06,
+      "success": true,
+      "result": "SENSEX24092750000CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "replace_strike_in_symbol",
+      "input_params": {
+        "symbol": "SENSEX24092784900CE",
+        "strike": 55000
+      },
+      "execution_time": 3.3760006772354245e-06,
+      "success": true,
+      "result": "SENSEX24092755000CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623750CE",
+        "shift_otm_count": -2
+      },
+      "execution_time": 9.85799852060154e-06,
+      "success": true,
+      "result": "NIFTY24122623650CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623750CE",
+        "shift_otm_count": -1
+      },
+      "execution_time": 6.0920028772670776e-06,
+      "success": true,
+      "result": "NIFTY24122623700CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623750CE",
+        "shift_otm_count": 0
+      },
+      "execution_time": 5.891000910196453e-06,
+      "success": true,
+      "result": "NIFTY24122623750CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623750CE",
+        "shift_otm_count": 1
+      },
+      "execution_time": 6.321999535430223e-06,
+      "success": true,
+      "result": "NIFTY24122623800CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623750CE",
+        "shift_otm_count": 2
+      },
+      "execution_time": 5.721001798519865e-06,
+      "success": true,
+      "result": "NIFTY24122623850CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623750PE",
+        "shift_otm_count": -2
+      },
+      "execution_time": 6.0110032791271806e-06,
+      "success": true,
+      "result": "NIFTY24122623850PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623750PE",
+        "shift_otm_count": -1
+      },
+      "execution_time": 5.7299985201098025e-06,
+      "success": true,
+      "result": "NIFTY24122623800PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623750PE",
+        "shift_otm_count": 0
+      },
+      "execution_time": 5.600002623395994e-06,
+      "success": true,
+      "result": "NIFTY24122623750PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623750PE",
+        "shift_otm_count": 1
+      },
+      "execution_time": 5.540998245123774e-06,
+      "success": true,
+      "result": "NIFTY24122623700PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623750PE",
+        "shift_otm_count": 2
+      },
+      "execution_time": 5.350000719772652e-06,
+      "success": true,
+      "result": "NIFTY24122623650PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623800CE",
+        "shift_otm_count": -2
+      },
+      "execution_time": 5.920999683439732e-06,
+      "success": true,
+      "result": "NIFTY24122623700CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623800CE",
+        "shift_otm_count": -1
+      },
+      "execution_time": 5.679998139385134e-06,
+      "success": true,
+      "result": "NIFTY24122623750CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623800CE",
+        "shift_otm_count": 0
+      },
+      "execution_time": 5.600002623395994e-06,
+      "success": true,
+      "result": "NIFTY24122623800CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623800CE",
+        "shift_otm_count": 1
+      },
+      "execution_time": 5.550999048864469e-06,
+      "success": true,
+      "result": "NIFTY24122623850CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623800CE",
+        "shift_otm_count": 2
+      },
+      "execution_time": 5.390000296756625e-06,
+      "success": true,
+      "result": "NIFTY24122623900CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623850PE",
+        "shift_otm_count": -2
+      },
+      "execution_time": 5.740999768022448e-06,
+      "success": true,
+      "result": "NIFTY24122623950PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623850PE",
+        "shift_otm_count": -1
+      },
+      "execution_time": 5.631001840811223e-06,
+      "success": true,
+      "result": "NIFTY24122623900PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623850PE",
+        "shift_otm_count": 0
+      },
+      "execution_time": 5.500001861946657e-06,
+      "success": true,
+      "result": "NIFTY24122623850PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623850PE",
+        "shift_otm_count": 1
+      },
+      "execution_time": 5.440000677481294e-06,
+      "success": true,
+      "result": "NIFTY24122623800PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24122623850PE",
+        "shift_otm_count": 2
+      },
+      "execution_time": 5.4199990699999034e-06,
+      "success": true,
+      "result": "NIFTY24122623750PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092625900PE",
+        "shift_otm_count": -2
+      },
+      "execution_time": 5.470999894896522e-06,
+      "success": true,
+      "result": "NIFTY24092626000PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092625900PE",
+        "shift_otm_count": -1
+      },
+      "execution_time": 5.609999789157882e-06,
+      "success": true,
+      "result": "NIFTY24092625950PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092625900PE",
+        "shift_otm_count": 0
+      },
+      "execution_time": 5.4299998737405986e-06,
+      "success": true,
+      "result": "NIFTY24092625900PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092625900PE",
+        "shift_otm_count": 1
+      },
+      "execution_time": 5.649999366141856e-06,
+      "success": true,
+      "result": "NIFTY24092625850PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092625900PE",
+        "shift_otm_count": 2
+      },
+      "execution_time": 5.558998964261264e-06,
+      "success": true,
+      "result": "NIFTY24092625800PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092626050CE",
+        "shift_otm_count": -2
+      },
+      "execution_time": 5.570000212173909e-06,
+      "success": true,
+      "result": "NIFTY24092625950CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092626050CE",
+        "shift_otm_count": -1
+      },
+      "execution_time": 5.430003511719406e-06,
+      "success": true,
+      "result": "NIFTY24092626000CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092626050CE",
+        "shift_otm_count": 0
+      },
+      "execution_time": 5.440997483674437e-06,
+      "success": true,
+      "result": "NIFTY24092626050CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092626050CE",
+        "shift_otm_count": 1
+      },
+      "execution_time": 5.40000110049732e-06,
+      "success": true,
+      "result": "NIFTY24092626100CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092626050CE",
+        "shift_otm_count": 2
+      },
+      "execution_time": 5.350000719772652e-06,
+      "success": true,
+      "result": "NIFTY24092626150CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092626100PE",
+        "shift_otm_count": -2
+      },
+      "execution_time": 5.680001777363941e-06,
+      "success": true,
+      "result": "NIFTY24092626200PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092626100PE",
+        "shift_otm_count": -1
+      },
+      "execution_time": 5.689998943125829e-06,
+      "success": true,
+      "result": "NIFTY24092626150PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092626100PE",
+        "shift_otm_count": 0
+      },
+      "execution_time": 5.580997822107747e-06,
+      "success": true,
+      "result": "NIFTY24092626100PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092626100PE",
+        "shift_otm_count": 1
+      },
+      "execution_time": 5.440997483674437e-06,
+      "success": true,
+      "result": "NIFTY24092626050PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "NIFTY24092626100PE",
+        "shift_otm_count": 2
+      },
+      "execution_time": 5.440000677481294e-06,
+      "success": true,
+      "result": "NIFTY24092626000PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "SENSEX24121380900PE",
+        "shift_otm_count": -2
+      },
+      "execution_time": 5.980997229926288e-06,
+      "success": true,
+      "result": "SENSEX24121381100PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "SENSEX24121380900PE",
+        "shift_otm_count": -1
+      },
+      "execution_time": 5.769001290900633e-06,
+      "success": true,
+      "result": "SENSEX24121381000PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "SENSEX24121380900PE",
+        "shift_otm_count": 0
+      },
+      "execution_time": 5.730998964281753e-06,
+      "success": true,
+      "result": "SENSEX24121380900PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "SENSEX24121380900PE",
+        "shift_otm_count": 1
+      },
+      "execution_time": 5.690999387297779e-06,
+      "success": true,
+      "result": "SENSEX24121380800PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "SENSEX24121380900PE",
+        "shift_otm_count": 2
+      },
+      "execution_time": 5.650999810313806e-06,
+      "success": true,
+      "result": "SENSEX24121380700PE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "SENSEX24121382400CE",
+        "shift_otm_count": -2
+      },
+      "execution_time": 5.7109973568003625e-06,
+      "success": true,
+      "result": "SENSEX24121382200CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "SENSEX24121382400CE",
+        "shift_otm_count": -1
+      },
+      "execution_time": 5.639998562401161e-06,
+      "success": true,
+      "result": "SENSEX24121382300CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "SENSEX24121382400CE",
+        "shift_otm_count": 0
+      },
+      "execution_time": 5.6390017562080175e-06,
+      "success": true,
+      "result": "SENSEX24121382400CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "SENSEX24121382400CE",
+        "shift_otm_count": 1
+      },
+      "execution_time": 5.580997822107747e-06,
+      "success": true,
+      "result": "SENSEX24121382500CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "SENSEX24121382400CE",
+        "shift_otm_count": 2
+      },
+      "execution_time": 5.599998985417187e-06,
+      "success": true,
+      "result": "SENSEX24121382600CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "SENSEX24092784900CE",
+        "shift_otm_count": -2
+      },
+      "execution_time": 5.670000973623246e-06,
+      "success": true,
+      "result": "SENSEX24092784700CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "SENSEX24092784900CE",
+        "shift_otm_count": -1
+      },
+      "execution_time": 5.570000212173909e-06,
+      "success": true,
+      "result": "SENSEX24092784800CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "SENSEX24092784900CE",
+        "shift_otm_count": 0
+      },
+      "execution_time": 5.549998604692519e-06,
+      "success": true,
+      "result": "SENSEX24092784900CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "SENSEX24092784900CE",
+        "shift_otm_count": 1
+      },
+      "execution_time": 5.540001438930631e-06,
+      "success": true,
+      "result": "SENSEX24092785000CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "shift_strike_in_symbol",
+      "input_params": {
+        "symbol": "SENSEX24092784900CE",
+        "shift_otm_count": 2
+      },
+      "execution_time": 5.5209966376423836e-06,
+      "success": true,
+      "result": "SENSEX24092785100CE",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_underlying",
+      "input_params": {
+        "symbol": "NIFTY24122623750CE"
+      },
+      "execution_time": 2.1839987311977893e-06,
+      "success": true,
+      "result": "NIFTY",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_underlying",
+      "input_params": {
+        "symbol": "NIFTY24122623750PE"
+      },
+      "execution_time": 1.3520002539735287e-06,
+      "success": true,
+      "result": "NIFTY",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_underlying",
+      "input_params": {
+        "symbol": "NIFTY24122623800CE"
+      },
+      "execution_time": 1.071999577106908e-06,
+      "success": true,
+      "result": "NIFTY",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_underlying",
+      "input_params": {
+        "symbol": "NIFTY24122623850PE"
+      },
+      "execution_time": 1.0520016076043248e-06,
+      "success": true,
+      "result": "NIFTY",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_underlying",
+      "input_params": {
+        "symbol": "NIFTY24092625900PE"
+      },
+      "execution_time": 1.1019983503501862e-06,
+      "success": true,
+      "result": "NIFTY",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_underlying",
+      "input_params": {
+        "symbol": "NIFTY24092626050CE"
+      },
+      "execution_time": 1.06200241134502e-06,
+      "success": true,
+      "result": "NIFTY",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_underlying",
+      "input_params": {
+        "symbol": "NIFTY24092626100PE"
+      },
+      "execution_time": 1.0219991963822395e-06,
+      "success": true,
+      "result": "NIFTY",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_underlying",
+      "input_params": {
+        "symbol": "SENSEX24121380900PE"
+      },
+      "execution_time": 1.1730007827281952e-06,
+      "success": true,
+      "result": "SENSEX",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_underlying",
+      "input_params": {
+        "symbol": "SENSEX24121382400CE"
+      },
+      "execution_time": 1.1410011211410165e-06,
+      "success": true,
+      "result": "SENSEX",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_underlying",
+      "input_params": {
+        "symbol": "SENSEX24092784900CE"
+      },
+      "execution_time": 1.172000338556245e-06,
+      "success": true,
+      "result": "SENSEX",
+      "error": null,
+      "memory_usage": null
+    },
+    {
+      "function_name": "get_underlying",
+      "input_params": {
+        "symbol": "SENSEX24092784200PE"
+      },
+      "execution_time": 1.1230004020035267e-06,
+      "success": true,
+      "result": "SENSEX",
+      "error": null,
+      "memory_usage": null
+    }
+  ]
+}

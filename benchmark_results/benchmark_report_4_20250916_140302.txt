@@ -1,0 +1,236 @@
+================================================================================
+EMS Framework Benchmark Report - 4
+Generated: 20250916_140302
+================================================================================
+
+OVERALL SUMMARY
+----------------------------------------
+Total Functions Tested: 21
+Total Function Calls: 342
+Overall Success Rate: 100.00%
+
+PERFORMANCE SUMMARY
+----------------------------------------
+Average Execution Time: 7.4589 ms
+Fastest Function Call: 0.0003 ms
+Slowest Function Call: 114.1373 ms
+
+FUNCTION BREAKDOWN
+----------------------------------------
+
+get_all_ticks_by_symbol:
+  Calls: 5
+  Success Rate: 100.00%
+  Avg Time: 79.4002 ms
+  Min Time: 55.9685 ms
+  Max Time: 114.1373 ms
+  Std Dev: 23.3907 ms
+
+get_tick:
+  Calls: 30
+  Success Rate: 100.00%
+  Avg Time: 21.8532 ms
+  Min Time: 7.0891 ms
+  Max Time: 70.3768 ms
+  Std Dev: 16.1228 ms
+
+find_symbol_by_moneyness:
+  Calls: 48
+  Success Rate: 100.00%
+  Avg Time: 17.2584 ms
+  Min Time: 3.4215 ms
+  Max Time: 62.5147 ms
+  Std Dev: 16.1556 ms
+
+get_last_available_tick:
+  Calls: 10
+  Success Rate: 100.00%
+  Avg Time: 13.7493 ms
+  Min Time: 6.3037 ms
+  Max Time: 22.0619 ms
+  Std Dev: 6.2621 ms
+
+find_symbol_by_itm_percent:
+  Calls: 24
+  Success Rate: 100.00%
+  Avg Time: 7.8283 ms
+  Min Time: 5.8314 ms
+  Max Time: 12.1540 ms
+  Std Dev: 2.0047 ms
+
+find_symbol_by_premium:
+  Calls: 24
+  Success Rate: 100.00%
+  Avg Time: 7.5515 ms
+  Min Time: 5.4713 ms
+  Max Time: 10.4389 ms
+  Std Dev: 1.9137 ms
+
+find_symbol_by_delta:
+  Calls: 24
+  Success Rate: 100.00%
+  Avg Time: 5.4192 ms
+  Min Time: 3.3933 ms
+  Max Time: 9.1375 ms
+  Std Dev: 2.1432 ms
+
+get_dte:
+  Calls: 30
+  Success Rate: 100.00%
+  Avg Time: 0.8361 ms
+  Min Time: 0.3873 ms
+  Max Time: 1.2846 ms
+  Std Dev: 0.2622 ms
+
+get_expiry_code:
+  Calls: 12
+  Success Rate: 100.00%
+  Avg Time: 0.5405 ms
+  Min Time: 0.2880 ms
+  Max Time: 0.8977 ms
+  Std Dev: 0.2599 ms
+
+parse_date_from_symbol:
+  Calls: 11
+  Success Rate: 100.00%
+  Avg Time: 0.0782 ms
+  Min Time: 0.0086 ms
+  Max Time: 0.7479 ms
+  Std Dev: 0.2222 ms
+
+get_nearest_expiry:
+  Calls: 6
+  Success Rate: 100.00%
+  Avg Time: 0.0334 ms
+  Min Time: 0.0189 ms
+  Max Time: 0.0564 ms
+  Std Dev: 0.0157 ms
+
+get_monthly_expiry_code:
+  Calls: 6
+  Success Rate: 100.00%
+  Avg Time: 0.0261 ms
+  Min Time: 0.0145 ms
+  Max Time: 0.0351 ms
+  Std Dev: 0.0089 ms
+
+get_expiry_dates:
+  Calls: 2
+  Success Rate: 100.00%
+  Avg Time: 0.0153 ms
+  Min Time: 0.0042 ms
+  Max Time: 0.0264 ms
+  Std Dev: 0.0157 ms
+
+shift_strike_in_symbol:
+  Calls: 50
+  Success Rate: 100.00%
+  Avg Time: 0.0057 ms
+  Min Time: 0.0054 ms
+  Max Time: 0.0099 ms
+  Std Dev: 0.0006 ms
+
+replace_strike_in_symbol:
+  Calls: 30
+  Success Rate: 100.00%
+  Avg Time: 0.0037 ms
+  Min Time: 0.0032 ms
+  Max Time: 0.0098 ms
+  Std Dev: 0.0012 ms
+
+parse_strike_from_symbol:
+  Calls: 11
+  Success Rate: 100.00%
+  Avg Time: 0.0032 ms
+  Min Time: 0.0017 ms
+  Max Time: 0.0134 ms
+  Std Dev: 0.0034 ms
+
+get_lot_size:
+  Calls: 2
+  Success Rate: 100.00%
+  Avg Time: 0.0022 ms
+  Min Time: 0.0009 ms
+  Max Time: 0.0035 ms
+  Std Dev: 0.0019 ms
+
+get_exchange:
+  Calls: 2
+  Success Rate: 100.00%
+  Avg Time: 0.0022 ms
+  Min Time: 0.0006 ms
+  Max Time: 0.0038 ms
+  Std Dev: 0.0023 ms
+
+get_underlying:
+  Calls: 11
+  Success Rate: 100.00%
+  Avg Time: 0.0012 ms
+  Min Time: 0.0010 ms
+  Max Time: 0.0022 ms
+  Std Dev: 0.0003 ms
+
+get_freeze_quantity:
+  Calls: 2
+  Success Rate: 100.00%
+  Avg Time: 0.0012 ms
+  Min Time: 0.0005 ms
+  Max Time: 0.0018 ms
+  Std Dev: 0.0009 ms
+
+get_strike_diff:
+  Calls: 2
+  Success Rate: 100.00%
+  Avg Time: 0.0009 ms
+  Min Time: 0.0003 ms
+  Max Time: 0.0016 ms
+  Std Dev: 0.0009 ms
+
+================================================================================
+TOP PERFORMERS (Fastest Average Time)
+----------------------------------------
+ 1. get_strike_diff: 0.0009 ms
+ 2. get_freeze_quantity: 0.0012 ms
+ 3. get_underlying: 0.0012 ms
+ 4. get_exchange: 0.0022 ms
+ 5. get_lot_size: 0.0022 ms
+ 6. parse_strike_from_symbol: 0.0032 ms
+ 7. replace_strike_in_symbol: 0.0037 ms
+ 8. shift_strike_in_symbol: 0.0057 ms
+ 9. get_expiry_dates: 0.0153 ms
+10. get_monthly_expiry_code: 0.0261 ms
+11. get_nearest_expiry: 0.0334 ms
+12. parse_date_from_symbol: 0.0782 ms
+13. get_expiry_code: 0.5405 ms
+14. get_dte: 0.8361 ms
+15. find_symbol_by_delta: 5.4192 ms
+16. find_symbol_by_premium: 7.5515 ms
+17. find_symbol_by_itm_percent: 7.8283 ms
+18. get_last_available_tick: 13.7493 ms
+19. find_symbol_by_moneyness: 17.2584 ms
+20. get_tick: 21.8532 ms
+21. get_all_ticks_by_symbol: 79.4002 ms
+
+MOST RELIABLE (Highest Success Rate)
+----------------------------------------
+ 1. get_lot_size: 100.00%
+ 2. get_freeze_quantity: 100.00%
+ 3. get_strike_diff: 100.00%
+ 4. get_exchange: 100.00%
+ 5. get_expiry_dates: 100.00%
+ 6. get_expiry_code: 100.00%
+ 7. get_monthly_expiry_code: 100.00%
+ 8. get_nearest_expiry: 100.00%
+ 9. parse_date_from_symbol: 100.00%
+10. parse_strike_from_symbol: 100.00%
+11. find_symbol_by_moneyness: 100.00%
+12. find_symbol_by_premium: 100.00%
+13. find_symbol_by_delta: 100.00%
+14. find_symbol_by_itm_percent: 100.00%
+15. get_tick: 100.00%
+16. get_last_available_tick: 100.00%
+17. get_all_ticks_by_symbol: 100.00%
+18. get_dte: 100.00%
+19. replace_strike_in_symbol: 100.00%
+20. shift_strike_in_symbol: 100.00%
+21. get_underlying: 100.00%
